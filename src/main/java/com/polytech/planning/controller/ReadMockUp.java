@@ -116,13 +116,13 @@ public class ReadMockUp extends ReadFile {
                 throw new FileFormatException("Le formats du fichier " + filePath + " n'est pas valide sur l'onglet "
                         + sheetName + ". Il manque le terme 'Affectation enseignement et responsabilité UE'.");
             }
-//TODO : Gérer Mundus
+
             if (sheetNum == 1 || sheetNum == 2) { // Mundus uniquement pour 3A
                 this.colMundus = searchContent(sheetNum, "Mundus", false)[1];
-                if (this.colMundus == -1) {
+                /* if (this.colMundus == -1) {
                     throw new FileFormatException("Le formats du fichier " + filePath
                             + " n'est pas valide sur l'onglet " + sheetName + ". Il manque le terme 'Mundus'.");
-                }
+                }*/
             }
 
             if (sheetNum != 5 && sheetNum != 6) { // Pas de projet pour la 5A
