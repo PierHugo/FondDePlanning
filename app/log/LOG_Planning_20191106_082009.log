@@ -1,0 +1,15 @@
+[ INFO ] 08:20:09.582 [main:ReadFile] : **************** Planning Generator ****************
+[ INFO ] 08:20:09.586 [main:ReadFile] : Executing command...
+[ ERROR] 08:20:09.604 [main:ReadFile] : -di5 (Le fichier spécifié est introuvable)
+[ ERROR] 08:20:09.605 [main:ReadFile] : java.base/java.io.FileInputStream.open0(Native Method)
+[ ERROR] 08:20:09.605 [main:ReadFile] : java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+[ ERROR] 08:20:09.605 [main:ReadFile] : java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+[ ERROR] 08:20:09.606 [main:ReadFile] : com.polytech.planning.controller.ReadFile.<init>(ReadFile.java:39)
+[ ERROR] 08:20:09.606 [main:ReadFile] : com.polytech.planning.controller.ReadCalendar.<init>(ReadCalendar.java:22)
+[ ERROR] 08:20:09.606 [main:ReadFile] : com.polytech.planning.controller.GeneratePlanning.setPlannings(GeneratePlanning.java:42)
+[ ERROR] 08:20:09.606 [main:ReadFile] : com.polytech.planning.controller.GeneratePlanning.getPlanningByYear(GeneratePlanning.java:131)
+[ ERROR] 08:20:09.607 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteGenerateCommand(MainViewHandler.java:91)
+[ ERROR] 08:20:09.607 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.parseCommand(MainViewHandler.java:56)
+[ ERROR] 08:20:09.607 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteCommands(MainViewHandler.java:24)
+[ ERROR] 08:20:09.607 [main:ReadFile] : com.polytech.planning.view.MainView.createMainView(MainView.java:31)
+[ ERROR] 08:20:09.607 [main:ReadFile] : com.polytech.planning.App.main(App.java:20)

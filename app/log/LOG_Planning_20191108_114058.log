@@ -1,0 +1,25 @@
+[ INFO ] 11:40:58.576 [main:ReadFile] : **************** Planning Generator ****************
+[ INFO ] 11:40:58.580 [main:ReadFile] : Executing command...
+[ INFO ] 11:41:00.064 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:7) La cellule a été ignorée.
+[ INFO ] 11:41:00.075 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:8) La cellule a été ignorée.
+[ INFO ] 11:41:00.076 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:11) La cellule a été ignorée.
+[ INFO ] 11:41:00.081 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:22) La cellule a été ignorée.
+[ INFO ] 11:41:00.084 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:28) La cellule a été ignorée.
+[ INFO ] 11:41:00.087 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:31) La cellule a été ignorée.
+[ INFO ] 11:41:00.088 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:32) La cellule a été ignorée.
+[ INFO ] 11:41:00.088 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:33) La cellule a été ignorée.
+[ INFO ] 11:41:00.089 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:34) La cellule a été ignorée.
+[ INFO ] 11:41:00.089 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:15,li:34) La cellule a été ignorée.
+[ ERROR] 11:41:00.342 [main:ReadFile] : null
+[ ERROR] 11:41:00.342 [main:ReadFile] : com.polytech.planning.controller.ReadFile.readNumericCell(ReadFile.java:130)
+[ ERROR] 11:41:00.342 [main:ReadFile] : com.polytech.planning.controller.ReadMockUp.readCourse(ReadMockUp.java:218)
+[ ERROR] 11:41:00.342 [main:ReadFile] : com.polytech.planning.controller.ReadMockUp.readCourses(ReadMockUp.java:273)
+[ ERROR] 11:41:00.342 [main:ReadFile] : com.polytech.planning.controller.ReadMockUp.readTeachingUnit(ReadMockUp.java:182)
+[ ERROR] 11:41:00.342 [main:ReadFile] : com.polytech.planning.controller.ReadMockUp.readTeachingUnits(ReadMockUp.java:158)
+[ ERROR] 11:41:00.342 [main:ReadFile] : com.polytech.planning.controller.GeneratePlanning.setPlannings(GeneratePlanning.java:70)
+[ ERROR] 11:41:00.342 [main:ReadFile] : com.polytech.planning.controller.GeneratePlanning.getPlanningByYear(GeneratePlanning.java:131)
+[ ERROR] 11:41:00.342 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteGenerateCommand(MainViewHandler.java:91)
+[ ERROR] 11:41:00.342 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.parseCommand(MainViewHandler.java:56)
+[ ERROR] 11:41:00.342 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteCommands(MainViewHandler.java:24)
+[ ERROR] 11:41:00.342 [main:ReadFile] : com.polytech.planning.view.MainView.createMainView(MainView.java:31)
+[ ERROR] 11:41:00.342 [main:ReadFile] : com.polytech.planning.App.main(App.java:20)

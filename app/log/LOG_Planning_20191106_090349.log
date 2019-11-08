@@ -1,0 +1,39 @@
+[ INFO ] 09:03:49.450 [main:ReadFile] : **************** Planning Generator ****************
+[ INFO ] 09:03:49.452 [main:ReadFile] : Executing command...
+[ INFO ] 09:03:50.892 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:7) La cellule a été ignorée.
+[ INFO ] 09:03:50.905 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:8) La cellule a été ignorée.
+[ INFO ] 09:03:50.908 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:11) La cellule a été ignorée.
+[ INFO ] 09:03:50.913 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:22) La cellule a été ignorée.
+[ INFO ] 09:03:50.915 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:28) La cellule a été ignorée.
+[ INFO ] 09:03:50.917 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:31) La cellule a été ignorée.
+[ INFO ] 09:03:50.918 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:32) La cellule a été ignorée.
+[ INFO ] 09:03:50.918 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:33) La cellule a été ignorée.
+[ INFO ] 09:03:50.919 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:34) La cellule a été ignorée.
+[ INFO ] 09:03:50.919 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:15,li:34) La cellule a été ignorée.
+[ INFO ] 09:03:51.119 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:7) La cellule a été ignorée.
+[ INFO ] 09:03:51.119 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:8) La cellule a été ignorée.
+[ INFO ] 09:03:51.122 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:11) La cellule a été ignorée.
+[ INFO ] 09:03:51.123 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:12) La cellule a été ignorée.
+[ INFO ] 09:03:51.126 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:20) La cellule a été ignorée.
+[ INFO ] 09:03:51.128 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:25) La cellule a été ignorée.
+[ INFO ] 09:03:51.129 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:30) La cellule a été ignorée.
+[ INFO ] 09:03:51.130 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:31) La cellule a été ignorée.
+[ INFO ] 09:03:51.130 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:34) La cellule a été ignorée.
+[ WARN ] 09:03:51.154 [main:ReadFile] : La cellule ligne 35 / colonne 6 de l'onglet 2, est de type STRING
+[ INFO ] 09:03:51.155 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:35) La cellule a été ignorée.
+[ INFO ] 09:03:51.155 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:36) La cellule a été ignorée.
+[ WARN ] 09:03:51.155 [main:ReadFile] : La cellule ligne 37 / colonne 6 de l'onglet 2, est de type STRING
+[ INFO ] 09:03:51.156 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:37) La cellule a été ignorée.
+[ INFO ] 09:03:51.156 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:38) La cellule a été ignorée.
+[ INFO ] 09:03:51.156 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:39) La cellule a été ignorée.
+[ INFO ] 09:03:51.157 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:15,li:39) La cellule a été ignorée.
+[ INFO ] 09:03:51.157 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:42) La cellule a été ignorée.
+[ INFO ] 09:03:51.157 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:15,li:42) La cellule a été ignorée.
+[ INFO ] 09:04:00.970 [main:ReadFile] : Problème de lecture de cellule. (f:3,col:15,li:30) La cellule a été ignorée.
+[ WARN ] 09:04:01.152 [main:ReadFile] : La cellule ligne 49 / colonne 7 de l'onglet 4, est de type STRING
+[ INFO ] 09:04:01.152 [main:ReadFile] : Problème de lecture de cellule. (f:4,col:17,li:50) La cellule a été ignorée.
+[ INFO ] 09:04:01.152 [main:ReadFile] : Problème de lecture de cellule. (f:4,col:17,li:53) La cellule a été ignorée.
+[ INFO ] 09:04:11.030 [main:ReadFile] : Problème de lecture de cellule. (f:5,col:14,li:32) La cellule a été ignorée.
+[ INFO ] 09:04:11.030 [main:ReadFile] : Problème de lecture de cellule. (f:5,col:14,li:37) La cellule a été ignorée.
+[ INFO ] 09:04:11.031 [main:ReadFile] : Problème de lecture de cellule. (f:5,col:14,li:47) La cellule a été ignorée.
+[ INFO ] 09:04:11.141 [main:ReadFile] : Problème de lecture de cellule. (f:6,col:15,li:30) La cellule a été ignorée.

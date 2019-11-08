@@ -1,0 +1,6 @@
+[ INFO ] 08:28:26.208 [main:ReadFile] : **************** Planning Generator ****************
+[ INFO ] 08:28:26.211 [main:ReadFile] : Executing command...
+[ INFO ] 08:28:27.729 [main:ReadFile] : Problème de lecture de cellule. (f:5,col:14,li:32) La cellule a été ignorée.
+[ INFO ] 08:28:27.732 [main:ReadFile] : Problème de lecture de cellule. (f:5,col:14,li:37) La cellule a été ignorée.
+[ INFO ] 08:28:27.739 [main:ReadFile] : Problème de lecture de cellule. (f:5,col:14,li:47) La cellule a été ignorée.
+[ INFO ] 08:28:28.044 [main:ReadFile] : Problème de lecture de cellule. (f:6,col:15,li:30) La cellule a été ignorée.

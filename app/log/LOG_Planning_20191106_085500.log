@@ -1,0 +1,44 @@
+[ INFO ] 08:55:00.679 [main:ReadFile] : **************** Planning Generator ****************
+[ INFO ] 08:55:00.682 [main:ReadFile] : Executing command...
+[ INFO ] 08:55:02.159 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:7) La cellule a été ignorée.
+[ INFO ] 08:55:02.161 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:8) La cellule a été ignorée.
+[ INFO ] 08:55:02.162 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:11) La cellule a été ignorée.
+[ INFO ] 08:55:02.167 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:22) La cellule a été ignorée.
+[ INFO ] 08:55:02.172 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:28) La cellule a été ignorée.
+[ INFO ] 08:55:02.174 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:31) La cellule a été ignorée.
+[ INFO ] 08:55:02.175 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:32) La cellule a été ignorée.
+[ INFO ] 08:55:02.175 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:33) La cellule a été ignorée.
+[ INFO ] 08:55:02.176 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:34) La cellule a été ignorée.
+[ INFO ] 08:55:02.176 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:15,li:34) La cellule a été ignorée.
+[ INFO ] 08:55:02.473 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:7) La cellule a été ignorée.
+[ INFO ] 08:55:02.473 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:8) La cellule a été ignorée.
+[ INFO ] 08:55:02.474 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:11) La cellule a été ignorée.
+[ INFO ] 08:55:02.475 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:12) La cellule a été ignorée.
+[ INFO ] 08:55:02.494 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:20) La cellule a été ignorée.
+[ INFO ] 08:55:02.495 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:25) La cellule a été ignorée.
+[ INFO ] 08:55:02.496 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:30) La cellule a été ignorée.
+[ INFO ] 08:55:02.497 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:31) La cellule a été ignorée.
+[ INFO ] 08:55:02.497 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:34) La cellule a été ignorée.
+[ WARN ] 08:55:02.503 [main:ReadFile] : La cellule ligne 35 / colonne 6 de l'onglet 2, est de type STRING
+[ INFO ] 08:55:02.504 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:35) La cellule a été ignorée.
+[ INFO ] 08:55:02.504 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:36) La cellule a été ignorée.
+[ WARN ] 08:55:02.505 [main:ReadFile] : La cellule ligne 37 / colonne 6 de l'onglet 2, est de type STRING
+[ INFO ] 08:55:02.505 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:37) La cellule a été ignorée.
+[ INFO ] 08:55:02.505 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:38) La cellule a été ignorée.
+[ INFO ] 08:55:02.505 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:39) La cellule a été ignorée.
+[ INFO ] 08:55:02.506 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:15,li:39) La cellule a été ignorée.
+[ INFO ] 08:55:02.506 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:42) La cellule a été ignorée.
+[ INFO ] 08:55:02.506 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:15,li:42) La cellule a été ignorée.
+[ ERROR] 08:55:09.796 [main:ReadFile] : Cannot add merged region BK3:BM4 to sheet because it overlaps with an existing merged region (BK3:BM4).
+[ ERROR] 08:55:09.796 [main:ReadFile] : org.apache.poi.xssf.usermodel.XSSFSheet.validateMergedRegions(XSSFSheet.java:482)
+[ ERROR] 08:55:09.796 [main:ReadFile] : org.apache.poi.xssf.usermodel.XSSFSheet.addMergedRegion(XSSFSheet.java:414)
+[ ERROR] 08:55:09.796 [main:ReadFile] : org.apache.poi.xssf.usermodel.XSSFSheet.addMergedRegion(XSSFSheet.java:368)
+[ ERROR] 08:55:09.796 [main:ReadFile] : com.polytech.planning.controller.StylesLib.setCellMerge(StylesLib.java:311)
+[ ERROR] 08:55:09.796 [main:ReadFile] : com.polytech.planning.controller.WritePlanning.writeAvailable(WritePlanning.java:949)
+[ ERROR] 08:55:09.797 [main:ReadFile] : com.polytech.planning.controller.WritePlanning.writeWeeks(WritePlanning.java:815)
+[ ERROR] 08:55:09.797 [main:ReadFile] : com.polytech.planning.controller.WritePlanning.createFile(WritePlanning.java:80)
+[ ERROR] 08:55:09.797 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteGenerateCommand(MainViewHandler.java:92)
+[ ERROR] 08:55:09.797 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.parseCommand(MainViewHandler.java:64)
+[ ERROR] 08:55:09.797 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteCommands(MainViewHandler.java:24)
+[ ERROR] 08:55:09.797 [main:ReadFile] : com.polytech.planning.view.MainView.createMainView(MainView.java:31)
+[ ERROR] 08:55:09.797 [main:ReadFile] : com.polytech.planning.App.main(App.java:20)

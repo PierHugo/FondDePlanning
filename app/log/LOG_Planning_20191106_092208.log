@@ -1,0 +1,29 @@
+[ INFO ] 09:22:08.306 [main:ReadFile] : **************** Planning Generator ****************
+[ INFO ] 09:22:08.310 [main:ReadFile] : Executing command...
+[ INFO ] 09:22:09.796 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:7) La cellule a été ignorée.
+[ INFO ] 09:22:09.798 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:8) La cellule a été ignorée.
+[ INFO ] 09:22:09.800 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:11) La cellule a été ignorée.
+[ INFO ] 09:22:09.805 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:22) La cellule a été ignorée.
+[ INFO ] 09:22:09.808 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:28) La cellule a été ignorée.
+[ INFO ] 09:22:09.810 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:31) La cellule a été ignorée.
+[ INFO ] 09:22:09.811 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:32) La cellule a été ignorée.
+[ INFO ] 09:22:09.811 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:33) La cellule a été ignorée.
+[ INFO ] 09:22:09.812 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:12,li:34) La cellule a été ignorée.
+[ INFO ] 09:22:09.812 [main:ReadFile] : Problème de lecture de cellule. (f:1,col:15,li:34) La cellule a été ignorée.
+[ INFO ] 09:22:10.028 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:7) La cellule a été ignorée.
+[ INFO ] 09:22:10.029 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:8) La cellule a été ignorée.
+[ INFO ] 09:22:10.029 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:11) La cellule a été ignorée.
+[ INFO ] 09:22:10.030 [main:ReadFile] : Problème de lecture de cellule. (f:2,col:12,li:12) La cellule a été ignorée.
+[ ERROR] 09:22:10.036 [main:ReadFile] : begin 0, end 1, length 0
+[ ERROR] 09:22:10.036 [main:ReadFile] : java.base/java.lang.String.checkBoundsBeginEnd(String.java:3720)
+[ ERROR] 09:22:10.036 [main:ReadFile] : java.base/java.lang.String.substring(String.java:1909)
+[ ERROR] 09:22:10.036 [main:ReadFile] : com.polytech.planning.controller.ToolBox.capitalize(ToolBox.java:28)
+[ ERROR] 09:22:10.036 [main:ReadFile] : com.polytech.planning.controller.ReadMockUp.readTeachingUnit(ReadMockUp.java:179)
+[ ERROR] 09:22:10.036 [main:ReadFile] : com.polytech.planning.controller.ReadMockUp.readTeachingUnits(ReadMockUp.java:158)
+[ ERROR] 09:22:10.036 [main:ReadFile] : com.polytech.planning.controller.GeneratePlanning.setPlannings(GeneratePlanning.java:70)
+[ ERROR] 09:22:10.036 [main:ReadFile] : com.polytech.planning.controller.GeneratePlanning.getPlanningByYear(GeneratePlanning.java:131)
+[ ERROR] 09:22:10.037 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteGenerateCommand(MainViewHandler.java:91)
+[ ERROR] 09:22:10.037 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.parseCommand(MainViewHandler.java:56)
+[ ERROR] 09:22:10.037 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteCommands(MainViewHandler.java:24)
+[ ERROR] 09:22:10.037 [main:ReadFile] : com.polytech.planning.view.MainView.createMainView(MainView.java:31)
+[ ERROR] 09:22:10.037 [main:ReadFile] : com.polytech.planning.App.main(App.java:20)

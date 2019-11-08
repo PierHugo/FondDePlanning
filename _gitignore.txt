@@ -1,0 +1,12 @@
+/target/
+.idea/
+.settings/
+<<<<<<< HEAD
+.project
+=======
+.project
+>>>>>>> RiskyMerge
+Planning Année 3 DI 2018 - 2019.xlsx
+*.xlsx
+.xlsx
+**/.idea/

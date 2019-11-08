@@ -1,0 +1,7 @@
+[ INFO ] 08:20:40.980 [main:ReadFile] : **************** Planning Generator ****************
+[ INFO ] 08:20:40.983 [main:ReadFile] : Executing command...
+[ ERROR] 08:20:40.984 [main:ReadFile] : Command error! Please check
+[ ERROR] 08:20:40.985 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.parseCommand(MainViewHandler.java:72)
+[ ERROR] 08:20:40.985 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteCommands(MainViewHandler.java:24)
+[ ERROR] 08:20:40.985 [main:ReadFile] : com.polytech.planning.view.MainView.createMainView(MainView.java:31)
+[ ERROR] 08:20:40.985 [main:ReadFile] : com.polytech.planning.App.main(App.java:20)
