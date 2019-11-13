@@ -645,7 +645,6 @@ public class WritePlanning extends WriteFile {
 				break;
 
 			case DI4:
-                //TODO : faudra bien tout harmoniser pour que les DI4 et DI5 aient 1 tableau de plus à en haut à droite pour les résumés des heures, car 3 spé et non 2
 				// SI
 				StylesLib.setCellMerge(sheet, lastWritenRow - 3, lastWritenRow - 2, 6, 8);
 				cell = super.writeStringCell(lastWritenRow - 3, 6, sheet, "Total Tr. Com. + ASR");
@@ -851,7 +850,7 @@ public class WritePlanning extends WriteFile {
 					// write summary DI3/ASR
 					this.writeSummary(i, sheets.get(calName), numSemester, 1);
 				}
-
+				//TODO : faudra bien tout harmoniser pour que les DI4 et DI5 aient 1 tableau de plus à en haut à droite pour les résumés des heures, car 3 spé et non 2
 				// write cm,td,tp
 				Cell cell3 = super.writeStringCell(lastWritenRow - 2, i, sheets.get(calName), "CM");
 				Cell cell4 = super.writeStringCell(lastWritenRow - 2, i + 1, sheets.get(calName), "TD");
