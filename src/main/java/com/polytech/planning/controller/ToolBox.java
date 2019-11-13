@@ -140,6 +140,10 @@ public final class ToolBox {
 				for (Course c : tu.getListCourses()) {
 					c.setType("SI");
 				}
+			} else if (tu.getName().toUpperCase().matches(".*PARCOURS IA.*")) {
+				for (Course c : tu.getListCourses()) {
+					c.setType("IA");
+				}
 			} else {
 				for (Course c : tu.getListCourses()) {
 					c.setType("ALL");

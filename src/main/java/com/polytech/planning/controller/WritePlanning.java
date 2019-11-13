@@ -545,7 +545,7 @@ public class WritePlanning extends WriteFile {
 	}
 
 	/**
-	 * write column ASR or SI for DI4&DI5
+	 * write column ASR or SI or IA for DI4&DI5
 	 * 
 	 * @param row
 	 * @param sheet
