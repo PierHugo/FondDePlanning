@@ -129,7 +129,6 @@ public final class ToolBox {
 	 * check a course is ASR or SI
 	 * @param teachingUnits
 	 */
-	//TODO : Ajout parcours IA
 	public static void checkCourseType(List<TeachingUnit> teachingUnits) {
 		for (TeachingUnit tu : teachingUnits) {
 			if (tu.getName().toUpperCase().matches(".*PARCOURS ASR.*")) {

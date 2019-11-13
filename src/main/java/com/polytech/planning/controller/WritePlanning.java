@@ -632,24 +632,24 @@ public class WritePlanning extends WriteFile {
 
 			case DI3:
 				// Mundus
-				StylesLib.setCellMerge(sheet, lastWritenRow - 1, lastWritenRow, 6, 8);
-				cell = super.writeStringCell(lastWritenRow - 1, 6, sheet, "Total Tr. Com. + MUNDUS");
+				StylesLib.setCellMerge(sheet, lastWritenRow - 2, lastWritenRow - 1, 6, 8);
+				cell = super.writeStringCell(lastWritenRow - 2, 6, sheet, "Total Tr. Com. + MUNDUS");
 				cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
-				StylesLib.addBorderForMergedCell(sheet, lastWritenRow - 1, lastWritenRow, 6, 8);
+				StylesLib.addBorderForMergedCell(sheet, lastWritenRow - 2, lastWritenRow - 1, 6, 8);
 
 				// DI3
-				StylesLib.setCellMerge(sheet, lastWritenRow + 2, lastWritenRow + 3, 6, 8);
-				cell = super.writeStringCell(lastWritenRow + 2, 6, sheet, "Total Tr. Com. + DI3");
+				StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow + 1, 6, 8);
+				cell = super.writeStringCell(lastWritenRow, 6, sheet, "Total Tr. Com. + DI3");
 				cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
-				StylesLib.addBorderForMergedCell(sheet, lastWritenRow + 2, lastWritenRow + 3, 6, 8);
+				StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow + 1, 6, 8);
 				break;
 
 			case DI4:
 				// SI
-				StylesLib.setCellMerge(sheet, lastWritenRow - 3, lastWritenRow - 2, 6, 8);
-				cell = super.writeStringCell(lastWritenRow - 3, 6, sheet, "Total Tr. Com. + ASR");
+				StylesLib.setCellMerge(sheet, lastWritenRow - 2, lastWritenRow - 1, 6, 8);
+				cell = super.writeStringCell(lastWritenRow - 2, 6, sheet, "Total Tr. Com. + ASR");
 				cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
-				StylesLib.addBorderForMergedCell(sheet, lastWritenRow - 3, lastWritenRow - 2, 6, 8);
+				StylesLib.addBorderForMergedCell(sheet, lastWritenRow - 2, lastWritenRow - 1, 6, 8);
 
 				// ASR
 				StylesLib.setCellMerge(sheet, lastWritenRow , lastWritenRow + 1, 6, 8);
@@ -658,10 +658,10 @@ public class WritePlanning extends WriteFile {
 				StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow + 1, 6, 8);
 
 				// IA
-				StylesLib.setCellMerge(sheet, lastWritenRow + 3, lastWritenRow + 4, 6, 8);
-				cell = super.writeStringCell(lastWritenRow + 3, 6, sheet, "Total Tr. Com. + IA");
+				StylesLib.setCellMerge(sheet, lastWritenRow + 2, lastWritenRow + 3, 6, 8);
+				cell = super.writeStringCell(lastWritenRow + 2, 6, sheet, "Total Tr. Com. + IA");
 				cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
-				StylesLib.addBorderForMergedCell(sheet, lastWritenRow + 3, lastWritenRow + 4, 6, 8);
+				StylesLib.addBorderForMergedCell(sheet, lastWritenRow + 2, lastWritenRow + 3, 6, 8);
 
 				break;
 
@@ -845,12 +845,17 @@ public class WritePlanning extends WriteFile {
 																				// holiday
 				if (!this.numSemester.equals("S10")) {
 					this.writeAvailable(calendar, i, sheets.get(calName), numSemester, key);
+					this.writeSummaryTitles(i, sheets.get(calName), numSemester);
 					// write summary MUNDUS/SI
 					this.writeSummary(i, sheets.get(calName), numSemester, 0);
 					// write summary DI3/ASR
 					this.writeSummary(i, sheets.get(calName), numSemester, 1);
-				}
-				//TODO : faudra bien tout harmoniser pour que les DI4 et DI5 aient 1 tableau de plus à en haut à droite pour les résumés des heures, car 3 spé et non 2
+					// write summary IA
+                    if (year.equals("DI4") || year.equals("DI5"))
+                    {
+                    this.writeSummary(i, sheets.get(calName), numSemester, 2);
+                    }
+                }
 				// write cm,td,tp
 				Cell cell3 = super.writeStringCell(lastWritenRow - 2, i, sheets.get(calName), "CM");
 				Cell cell4 = super.writeStringCell(lastWritenRow - 2, i + 1, sheets.get(calName), "TD");
@@ -876,6 +881,36 @@ public class WritePlanning extends WriteFile {
 
 	}
 
+
+
+
+	/**
+	 * write summary
+	 *
+	 * @param col
+	 * @param sheet
+	 * @param numSemester
+	 */
+	private void writeSummaryTitles(int col, Sheet sheet, int numSemester) {
+		String rowStrStart, rowStrEnd;
+		String totalColStart, totalColEnd;
+		int startRow = 0, line = 4;
+		startRow = this.lastWritenRow - 4;
+		// each part CM
+		Cell cell1 = super.writeStringCell(startRow - 9, col, sheet, "CM");
+
+		// each part TD
+		Cell cell2 = super.writeStringCell(startRow - 9, col + 1, sheet, "TD");
+
+		// each part TP
+		Cell cell3 = super.writeStringCell(startRow - 9, col + 2, sheet, "TP");
+
+		cell1.setCellStyle(StylesLib.cmStyle((XSSFWorkbook) workbook));
+		cell2.setCellStyle(StylesLib.tdStyle((XSSFWorkbook) workbook));
+		cell3.setCellStyle(StylesLib.tpStyle((XSSFWorkbook) workbook));
+
+	}
+
 	/**
 	 * write summary
 	 * 
@@ -883,7 +918,7 @@ public class WritePlanning extends WriteFile {
 	 * @param sheet
 	 * @param numSemester
 	 * @param type
-	 *            0 => SI/MUNDUS, 1=>ASR?DI3
+	 *            0 => SI/MUNDUS, 1=>ASR/DI3 2=>IA
 	 */
 	private void writeSummary(int col, Sheet sheet, int numSemester, int type) {
 		String rowStrStart, rowStrEnd;
@@ -891,57 +926,50 @@ public class WritePlanning extends WriteFile {
 		int startRow = 0, line = 4;
 		switch (type) {
 		case 0:
-			startRow = this.lastWritenRow - 3;
+			startRow = this.lastWritenRow - 4;
 			line = 5;
 			break;
 		case 1:
-			startRow = this.lastWritenRow;
+			startRow = this.lastWritenRow - 2;
 			line = 4;
 			break;
+		case 2:
+			startRow = this.lastWritenRow;
+			line = 6;
+			break;
 		}
-
 		// total
 		totalColStart = ToolBox.excelColIndexToStr(col + 1) + (startRow - 7);
 		totalColEnd = ToolBox.excelColIndexToStr(col + 3) + (startRow - 7);
 		StylesLib.setCellMerge(sheet, startRow - 7, startRow - 7, col, col + 2);
 		Cell cell4_1 = super.writeFormula("SUM(" + totalColStart + ":" + totalColEnd + ")", startRow - 7, col, sheet);
-		// each part CM
-		Cell cell1 = super.writeStringCell(startRow - 9, col, sheet, "CM");
+
+		// generate variable CM
 		rowStrStart = ToolBox.excelColIndexToStr(col + 1) + (lastWritenRow + 1);
 		rowStrEnd = ToolBox.excelColIndexToStr(col + 1) + (this.lastTURow[numSemester] + 1);
-
-		// generate variable
 		String array1 = rowStrStart + ":" + rowStrEnd;
 		String array2_1 = ToolBox.excelColIndexToStr(line) + (lastWritenRow + 1) + ":"
 				+ ToolBox.excelColIndexToStr(line) + (this.lastTURow[numSemester] + 1);
 		// write SUMPRODUCT()
 		Cell cell1_1 = super.writeFormula("SUMPRODUCT(" + array1 + "," + array2_1 + ")", startRow - 8, col++, sheet);
 
-		// each part TD
-		Cell cell2 = super.writeStringCell(startRow - 9, col, sheet, "TD");
+		// generate variable TD
 		rowStrStart = ToolBox.excelColIndexToStr(col + 1) + (lastWritenRow + 1);
 		rowStrEnd = ToolBox.excelColIndexToStr(col + 1) + (this.lastTURow[numSemester] + 1);
-		// generate variable
 		array1 = rowStrStart + ":" + rowStrEnd;
 		array2_1 = ToolBox.excelColIndexToStr(line) + (lastWritenRow + 1) + ":" + ToolBox.excelColIndexToStr(line)
 				+ (this.lastTURow[numSemester] + 1);
 		// write SUMPRODUCT()
 		Cell cell2_1 = super.writeFormula("SUMPRODUCT(" + array1 + "," + array2_1 + ")", startRow - 8, col++, sheet);
 
-		// each part TP
-		Cell cell3 = super.writeStringCell(startRow - 9, col, sheet, "TP");
+		// generate variable TP
 		rowStrStart = ToolBox.excelColIndexToStr(col + 1) + (lastWritenRow + 1);
 		rowStrEnd = ToolBox.excelColIndexToStr(col + 1) + (this.lastTURow[numSemester] + 1);
-		// generate variable
 		array1 = rowStrStart + ":" + rowStrEnd;
 		array2_1 = ToolBox.excelColIndexToStr(line) + (lastWritenRow + 1) + ":" + ToolBox.excelColIndexToStr(line)
 				+ (this.lastTURow[numSemester] + 1);
 		// write SUMPRODUCT()
 		Cell cell3_1 = super.writeFormula("SUMPRODUCT(" + array1 + "," + array2_1 + ")", startRow - 8, col++, sheet);
-
-		cell1.setCellStyle(StylesLib.cmStyle((XSSFWorkbook) workbook));
-		cell2.setCellStyle(StylesLib.tdStyle((XSSFWorkbook) workbook));
-		cell3.setCellStyle(StylesLib.tpStyle((XSSFWorkbook) workbook));
 
 		cell1_1.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
 		cell2_1.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
