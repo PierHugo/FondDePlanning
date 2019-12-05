@@ -1,0 +1,16 @@
+[ INFO ] 17:26:23.666 [main:ReadFile] : **************** Planning Generator ****************
+[ INFO ] 17:26:23.669 [main:ReadFile] : Executing command...
+[ INFO ] 17:26:25.413 [main:ReadFile] : Problème de lecture de cellule. (f:3,col:15,li:30) La cellule a été ignorée.
+[ WARN ] 17:26:25.756 [main:ReadFile] : La cellule ligne 49 / colonne 7 de l'onglet 4, est de type STRING
+[ INFO ] 17:26:25.757 [main:ReadFile] : Problème de lecture de cellule. (f:4,col:17,li:50) La cellule a été ignorée.
+[ INFO ] 17:26:25.758 [main:ReadFile] : Problème de lecture de cellule. (f:4,col:17,li:53) La cellule a été ignorée.
+[ ERROR] 17:26:26.115 [main:ReadFile] : Invalid cell range, having lastRow < firstRow || lastCol < firstCol, had rows 9 >= 10 or cells 8 >= 6
+[ ERROR] 17:26:26.116 [main:ReadFile] : org.apache.poi.ss.util.CellRangeAddress.<init>(CellRangeAddress.java:49)
+[ ERROR] 17:26:26.116 [main:ReadFile] : com.polytech.planning.controller.StylesLib.setCellMerge(StylesLib.java:310)
+[ ERROR] 17:26:26.116 [main:ReadFile] : com.polytech.planning.controller.WritePlanning.writeIntroPart(WritePlanning.java:650)
+[ ERROR] 17:26:26.116 [main:ReadFile] : com.polytech.planning.controller.WritePlanning.createFile(WritePlanning.java:78)
+[ ERROR] 17:26:26.116 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteGenerateCommand(MainViewHandler.java:92)
+[ ERROR] 17:26:26.116 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.parseCommand(MainViewHandler.java:60)
+[ ERROR] 17:26:26.116 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteCommands(MainViewHandler.java:24)
+[ ERROR] 17:26:26.116 [main:ReadFile] : com.polytech.planning.view.MainView.createMainView(MainView.java:31)
+[ ERROR] 17:26:26.116 [main:ReadFile] : com.polytech.planning.App.main(App.java:20)

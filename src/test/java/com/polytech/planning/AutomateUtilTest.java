@@ -7,10 +7,12 @@ import org.junit.jupiter.api.Test;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-class AutomateUtilTest {
+class AutomateUtilTest
+{
 
     @Test
-    void isCorrect() {
+    void isCorrect()
+    {
 
         // Right chain
         String rChain1 = "Ch. Lenté, 2hCM, 4hTPx3gr ; M.Slimane,18hCM,10hTDx3gr\n";
@@ -29,22 +31,22 @@ class AutomateUtilTest {
         String rChain13 = "Ch. Lenté, x2gr\n";
         String rChain15 = "Ch. Lenté\n";
 
-        assertTrue(testChain(rChain1,3,1));
-        assertTrue(testChain(rChain2,3,1));
-        assertTrue(testChain(rChain3,3,1));
-        assertTrue(testChain(rChain4,3,1));
-        assertTrue(testChain(rChain5,3,1));
-        assertTrue(testChain(rChain6,3,1));
-        assertTrue(testChain(rChain7,1,1));
-        assertTrue(testChain(rChain8,3,1));
-        assertTrue(testChain(rChain9,3,1));
-        assertTrue(testChain(rChain10,3,1));
-        assertTrue(testChain(rChain11,3,1));
-        assertTrue(testChain(rChain12,3,1));
-        assertTrue(testChain(rChain13,3,1));
-        assertTrue(testChain(rChain14,1,1));
-        assertTrue(testChain(rChain15,1,1));
-        assertTrue(testChain(null, 1,1));
+        assertTrue(testChain(rChain1, 3, 1));
+        assertTrue(testChain(rChain2, 3, 1));
+        assertTrue(testChain(rChain3, 3, 1));
+        assertTrue(testChain(rChain4, 3, 1));
+        assertTrue(testChain(rChain5, 3, 1));
+        assertTrue(testChain(rChain6, 3, 1));
+        assertTrue(testChain(rChain7, 1, 1));
+        assertTrue(testChain(rChain8, 3, 1));
+        assertTrue(testChain(rChain9, 3, 1));
+        assertTrue(testChain(rChain10, 3, 1));
+        assertTrue(testChain(rChain11, 3, 1));
+        assertTrue(testChain(rChain12, 3, 1));
+        assertTrue(testChain(rChain13, 3, 1));
+        assertTrue(testChain(rChain14, 1, 1));
+        assertTrue(testChain(rChain15, 1, 1));
+        assertTrue(testChain(null, 1, 1));
 
         // Wrong chain
         String wChain1 = "Ch. Lenté, 2hCM, 4hTPxgr\n";
@@ -60,23 +62,26 @@ class AutomateUtilTest {
         String wChain10 = "Ch. Lenté, 3gr\n";
 
 
-        assertFalse(testChain(wChain1,1, 3));
-        assertFalse(testChain(wChain2,1, 3));
-        assertFalse(testChain(wChain3,1, 3));
-        assertFalse(testChain(wChain4,1, 3));
-        assertFalse(testChain(wChain5,1, 3));
-        assertFalse(testChain(wChain6,1, 3));
-        assertFalse(testChain(wChain7,1, 3));
-        assertFalse(testChain(wChain8,1, 3));
-        assertFalse(testChain(wChain9,1, 3));
-        assertFalse(testChain(wChain10,1, 3));
-        assertFalse(testChain(wChain11,3, 3));
+        assertFalse(testChain(wChain1, 1, 3));
+        assertFalse(testChain(wChain2, 1, 3));
+        assertFalse(testChain(wChain3, 1, 3));
+        assertFalse(testChain(wChain4, 1, 3));
+        assertFalse(testChain(wChain5, 1, 3));
+        assertFalse(testChain(wChain6, 1, 3));
+        assertFalse(testChain(wChain7, 1, 3));
+        assertFalse(testChain(wChain8, 1, 3));
+        assertFalse(testChain(wChain9, 1, 3));
+        assertFalse(testChain(wChain10, 1, 3));
+        assertFalse(testChain(wChain11, 3, 3));
     }
 
-    public boolean testChain(String chain, int sheet, int row){
-        try{
-            return new AutomateUtil(chain, sheet,row).isCorrect();
-        }catch(AutomateException e){
+    public boolean testChain(String chain, int sheet, int row)
+    {
+        try
+        {
+            return new AutomateUtil(chain, sheet, row).isCorrect();
+        } catch (AutomateException e)
+        {
             return false;
         }
     }

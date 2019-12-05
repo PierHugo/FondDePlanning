@@ -1,0 +1,17 @@
+[ INFO ] 17:12:00.525 [main:ReadFile] : **************** Planning Generator ****************
+[ INFO ] 17:12:00.528 [main:ReadFile] : Executing command...
+[ INFO ] 17:12:02.062 [main:ReadFile] : Problème de lecture de cellule. (f:3,col:15,li:30) La cellule a été ignorée.
+[ WARN ] 17:12:02.260 [main:ReadFile] : La cellule ligne 49 / colonne 7 de l'onglet 4, est de type STRING
+[ INFO ] 17:12:02.261 [main:ReadFile] : Problème de lecture de cellule. (f:4,col:17,li:50) La cellule a été ignorée.
+[ INFO ] 17:12:02.261 [main:ReadFile] : Problème de lecture de cellule. (f:4,col:17,li:53) La cellule a été ignorée.
+[ ERROR] 17:12:06.023 [main:ReadFile] : Planning Année 4 DI 2019 - 2020.xlsx (Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus)
+[ ERROR] 17:12:06.025 [main:ReadFile] : java.base/java.io.FileOutputStream.open0(Native Method)
+[ ERROR] 17:12:06.025 [main:ReadFile] : java.base/java.io.FileOutputStream.open(FileOutputStream.java:292)
+[ ERROR] 17:12:06.025 [main:ReadFile] : java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+[ ERROR] 17:12:06.025 [main:ReadFile] : java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:124)
+[ ERROR] 17:12:06.025 [main:ReadFile] : com.polytech.planning.controller.WritePlanning.createFile(WritePlanning.java:85)
+[ ERROR] 17:12:06.025 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteGenerateCommand(MainViewHandler.java:92)
+[ ERROR] 17:12:06.025 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.parseCommand(MainViewHandler.java:60)
+[ ERROR] 17:12:06.025 [main:ReadFile] : com.polytech.planning.view.handler.MainViewHandler.excuteCommands(MainViewHandler.java:24)
+[ ERROR] 17:12:06.025 [main:ReadFile] : com.polytech.planning.view.MainView.createMainView(MainView.java:31)
+[ ERROR] 17:12:06.025 [main:ReadFile] : com.polytech.planning.App.main(App.java:20)

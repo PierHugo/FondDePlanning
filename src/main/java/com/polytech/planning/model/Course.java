@@ -3,171 +3,194 @@ package com.polytech.planning.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Course {
-	
-	private String name;
-	
-	private List<Teacher> listTeachers;
-	
-	private double totalCM;
-	private double totalTD;
-	private double totalTP;
-	private double totalProject;
-	
-	private boolean cc;
-	private boolean ct;
-	private boolean mundus;
-	private String type; // ASR or SI
-	
-	/**
-	 * Course's Constructor
-	 * @param name
-	 */
-	public Course(String name) {
-		listTeachers = new ArrayList<Teacher>();
-		this.name = name;
-		this.cc = false;
-		this.ct = false;
-		this.mundus = false;
-	}
+public class Course
+{
 
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return name;
-	}
+    private String name;
 
-	/**
-	 * @return the totalCM
-	 */
-	public double getTotalCM() {
-		return totalCM;
-	}
+    private List<Teacher> listTeachers;
 
-	/**
-	 * @return the totalTD
-	 */
-	public double getTotalTD() {
-		return totalTD;
-	}
+    private double totalCM;
+    private double totalTD;
+    private double totalTP;
+    private double totalProject;
 
-	/**
-	 * @return the totalTP
-	 */
-	public double getTotalTP() {
-		return totalTP;
-	}
+    private boolean cc;
+    private boolean ct;
+    private boolean mundus;
+    private String type; // ASR or SI
 
-	/**
-	 * @return the listTeachers
-	 */
-	public List<Teacher> getListTeachers() {
-		return listTeachers;
-	}
+    /**
+     * Course's Constructor
+     *
+     * @param name
+     */
+    public Course(String name)
+    {
+        listTeachers = new ArrayList<Teacher>();
+        this.name = name;
+        this.cc = false;
+        this.ct = false;
+        this.mundus = false;
+    }
 
-	/**
-	 * @param listTeachers the listTeachers to set
-	 */
-	public void setListTeachers(List<Teacher> listTeachers) {
-		this.listTeachers = listTeachers;
-	}
+    /**
+     * @return the name
+     */
+    public String getName()
+    {
+        return name;
+    }
 
-	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
+    /**
+     * @param name the name to set
+     */
+    public void setName(String name)
+    {
+        this.name = name;
+    }
 
-	/**
-	 * @param totalCM the totalCM to set
-	 */
-	public void setTotalCM(double totalCM) {
-		this.totalCM = totalCM;
-	}
+    /**
+     * @return the totalCM
+     */
+    public double getTotalCM()
+    {
+        return totalCM;
+    }
 
-	/**
-	 * @param totalTD the totalTD to set
-	 */
-	public void setTotalTD(double totalTD) {
-		this.totalTD = totalTD;
-	}
+    /**
+     * @param totalCM the totalCM to set
+     */
+    public void setTotalCM(double totalCM)
+    {
+        this.totalCM = totalCM;
+    }
 
-	/**
-	 * @param totalTP the totalTP to set
-	 */
-	public void setTotalTP(double totalTP) {
-		this.totalTP = totalTP;
-	}
+    /**
+     * @return the totalTD
+     */
+    public double getTotalTD()
+    {
+        return totalTD;
+    }
 
-	/**
-	 * @return the totalProject
-	 */
-	public double getTotalProject() {
-		return totalProject;
-	}
+    /**
+     * @param totalTD the totalTD to set
+     */
+    public void setTotalTD(double totalTD)
+    {
+        this.totalTD = totalTD;
+    }
 
-	/**
-	 * @param totalProject the totalProject to set
-	 */
-	public void setTotalProject(double totalProject) {
-		this.totalProject = totalProject;
-	}
+    /**
+     * @return the totalTP
+     */
+    public double getTotalTP()
+    {
+        return totalTP;
+    }
 
-	/**
-	 * @return the cc
-	 */
-	public boolean hasCc() {
-		return cc;
-	}
+    /**
+     * @param totalTP the totalTP to set
+     */
+    public void setTotalTP(double totalTP)
+    {
+        this.totalTP = totalTP;
+    }
 
-	/**
-	 * @param cc the cc to set
-	 */
-	public void setCc(boolean cc) {
-		this.cc = cc;
-	}
+    /**
+     * @return the listTeachers
+     */
+    public List<Teacher> getListTeachers()
+    {
+        return listTeachers;
+    }
 
-	/**
-	 * @return the ct
-	 */
-	public boolean hasCt() {
-		return ct;
-	}
+    /**
+     * @param listTeachers the listTeachers to set
+     */
+    public void setListTeachers(List<Teacher> listTeachers)
+    {
+        this.listTeachers = listTeachers;
+    }
 
-	/**
-	 * @param ct the ct to set
-	 */
-	public void setCt(boolean ct) {
-		this.ct = ct;
-	}
+    /**
+     * @return the totalProject
+     */
+    public double getTotalProject()
+    {
+        return totalProject;
+    }
 
-	/**
-	 * @return the mundus
-	 */
-	public boolean isMundus() {
-		return mundus;
-	}
+    /**
+     * @param totalProject the totalProject to set
+     */
+    public void setTotalProject(double totalProject)
+    {
+        this.totalProject = totalProject;
+    }
 
-	/**
-	 * @param mundus the mundus to set
-	 */
-	public void setMundus(boolean mundus) {
-		this.mundus = mundus;
-	}
+    /**
+     * @return the cc
+     */
+    public boolean hasCc()
+    {
+        return cc;
+    }
 
-	/**
-	 * @return the type
-	 */
-	public String getType() {
-		return type;
-	}
+    /**
+     * @param cc the cc to set
+     */
+    public void setCc(boolean cc)
+    {
+        this.cc = cc;
+    }
 
-	/**
-	 * @param type the type to set
-	 */
-	public void setType(String type) {
-		this.type = type;
-	}	
+    /**
+     * @return the ct
+     */
+    public boolean hasCt()
+    {
+        return ct;
+    }
+
+    /**
+     * @param ct the ct to set
+     */
+    public void setCt(boolean ct)
+    {
+        this.ct = ct;
+    }
+
+    /**
+     * @return the mundus
+     */
+    public boolean isMundus()
+    {
+        return mundus;
+    }
+
+    /**
+     * @param mundus the mundus to set
+     */
+    public void setMundus(boolean mundus)
+    {
+        this.mundus = mundus;
+    }
+
+    /**
+     * @return the type
+     */
+    public String getType()
+    {
+        return type;
+    }
+
+    /**
+     * @param type the type to set
+     */
+    public void setType(String type)
+    {
+        this.type = type;
+    }
 }

@@ -2,7 +2,7 @@
   <artifact type="jar" build-on-make="true" name="planning:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/planning_jar</output-path>
     <root id="archive" name="planning.jar">
-      <element id="module-output" name="planning" />
+      <element id="module-output" name="FondDePlanning" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/glassfish/corba/glassfish-corba-csiv2-idl/4.2.0-b004/glassfish-corba-csiv2-idl-4.2.0-b004.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.0.0/poi-ooxml-4.0.0.jar" path-in-jar="/" />
