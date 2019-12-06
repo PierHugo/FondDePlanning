@@ -1,15 +1,12 @@
 Réunion 18/11/19 :
 
-IA : créneaux utilisés ( grosse fonction param a revoir pour IA, semble inculre seulement une formation)
+A faire :
+IA : créneaux utilisés ( grosse fonction param a revoir pour IA, semble inclure seulement une formation)
+Mundus : choix dans feuille calendrier
 
-mundus : choix dans feuille calendrier, pourquoi pas nouveau paramètre de lancement pour dire si on le lance ou non
+Si facile :
+Colonne k : mise en forme conditionnelle heures restantes difference avec heures disponibles
+Ligne 7 : idem
 
-colonne k : mise en forme conditionnelle heures restantes difference avec heures disponibles
-ligne 7 : idem
-
-si possible 	-figer volet 
-		-masquer colonnes inutiles
-
-ponts a gérer ensuite
-
-S10 : osef
+Étape suivante : ponts
+Étape suivante : S10 mais pas la priorité

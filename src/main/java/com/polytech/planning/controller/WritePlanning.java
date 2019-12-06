@@ -72,18 +72,39 @@ public class WritePlanning extends WriteFile
             this.writeEmptyCells(sheet, i);
             i++;
 
-            sheet.createFreezePane(9,17); //fige des volets
-            for (int iCol = 0; iCol <= 5; iCol++)
-            {
-                sheet.setColumnHidden(iCol, true); //cache les colonnes
-            }
-            sheet.setColumnHidden(1, false); //réaffiche celle des cours
+            freezeCells(sheet);
+            hideCells(sheet);
+
         }
         FileOutputStream output;
         output = new FileOutputStream(super.getFilePath());
         this.workbook.write(output);
         output.close();
 
+    }
+
+    /**
+     * freeze the main planning part
+     *
+     * @param sheet
+     */
+    public void freezeCells(Sheet sheet)
+    {
+        sheet.createFreezePane(9, 17); //fige des volets
+    }
+
+    /**
+     * hide the miscellaneous part
+     *
+     * @param sheet
+     */
+    public void hideCells(Sheet sheet)
+    {
+        for (int iCol = 0; iCol <= 5; iCol++)
+        {
+            sheet.setColumnHidden(iCol, true); //cache les colonnes
+        }
+        sheet.setColumnHidden(1, false); //réaffiche celle des cours
     }
 
     /**
@@ -647,26 +668,34 @@ public class WritePlanning extends WriteFile
         lastWritenRow++;
         if (!this.numSemester.equals("S10"))
         {
-            cell = super.writeStringCell(lastWritenRow, 2, sheet, "Disponibilité / étudiant (h)");
+            StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow, 6, 8);
+            cell = super.writeStringCell(lastWritenRow, 6, sheet, "Disponibilité / étudiant (h)");
             cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
+            StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow , 6, 8);
 
             lastWritenRow++;
 
-            cell = super.writeStringCell(lastWritenRow, 2, sheet, "Créneaux disponibles");
+            StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow, 6, 8);
+            cell = super.writeStringCell(lastWritenRow, 6, sheet, "Créneaux disponibles");
             cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
+            StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow , 6, 8);
 
             lastWritenRow++;
 
-            cell = super.writeStringCell(lastWritenRow, 2, sheet, "Créneaux utilisés");
+            StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow, 6, 8);
+            cell = super.writeStringCell(lastWritenRow, 6, sheet, "Créneaux utilisés");
             cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
+            StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow , 6, 8);
 
             lastWritenRow += 4;
 
-            StylesLib.setCellMerge(sheet, lastWritenRow - 2, lastWritenRow + 3, 2, 2);
+            //StylesLib.setCellMerge(sheet, lastWritenRow - 2, lastWritenRow + 3, 1, 2);
 
-            cell = super.writeStringCell(lastWritenRow - 2, 2, sheet, "Synthèse volume travail / étudiant (h)");
+            /*
+            cell = super.writeStringCell(lastWritenRow - 2, 1, sheet, "Synthèse volume travail / étudiant (h)");
             cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
-            StylesLib.addBorderForMergedCell(sheet, lastWritenRow - 2, lastWritenRow + 3, 2, 2);
+            StylesLib.addBorderForMergedCell(sheet, lastWritenRow - 2, lastWritenRow + 3, 1, 2);
+            */
 
             // write two different total
             switch (nameYear)
@@ -735,13 +764,18 @@ public class WritePlanning extends WriteFile
 
         lastWritenRow += 5;
 
-        cell = super.writeStringCell(lastWritenRow, 2, sheet, "N° semaine");
+        StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow, 6, 8);
+        cell = super.writeStringCell(lastWritenRow, 6, sheet, "N° semaine");
         cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
+        StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow , 6, 8);
+
 
         lastWritenRow++;
 
-        cell = super.writeStringCell(lastWritenRow, 2, sheet, "Date semaine");
+        StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow, 6, 8);
+        cell = super.writeStringCell(lastWritenRow, 6, sheet, "Date semaine");
         cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
+        StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow , 6, 8);
 
         lastWritenRow += 2;
 
