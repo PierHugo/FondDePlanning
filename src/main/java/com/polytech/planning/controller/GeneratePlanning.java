@@ -69,12 +69,9 @@ public class GeneratePlanning
             // DI3 S6
             readMockUp = new ReadMockUp(this.filePathMockUp, 2);
             readMockUp.readTeachingUnits();
-            // TODO : add method call to check all lines
             pMockUp = new ParserMockUp(readMockUp.getTeachingUnits());
             planning = new Planning(this.year, pMockUp.createTeachingUnits(), pCalendar.createCalendar());
             planning.getCalendar().setName("S6");
-            // TODO : Check si l'oubli de PlanningDI3.add(planning) est normal
-            //planningDI3.add(planning);
 
             planningDI3.add(planning);
             plannings.put("DI3", planningDI3);
@@ -83,7 +80,6 @@ public class GeneratePlanning
             // DI4 S7
             readMockUp = new ReadMockUp(this.filePathMockUp, 3);
             readMockUp.readTeachingUnits();
-            // TODO : add method call to check all lines
             pMockUp = new ParserMockUp(readMockUp.getTeachingUnits());
             planning = new Planning(this.year, pMockUp.createTeachingUnits(), pCalendar.createCalendar());
             planning.getCalendar().setName("S7");
@@ -92,7 +88,6 @@ public class GeneratePlanning
             // DI4 S8
             readMockUp = new ReadMockUp(this.filePathMockUp, 4);
             readMockUp.readTeachingUnits();
-            // TODO : add method call to check all lines
             pMockUp = new ParserMockUp(readMockUp.getTeachingUnits());
             planning = new Planning(this.year, pMockUp.createTeachingUnits(), pCalendar.createCalendar());
             planning.getCalendar().setName("S8");
@@ -104,7 +99,6 @@ public class GeneratePlanning
             // DI5 S9
             readMockUp = new ReadMockUp(this.filePathMockUp, 5);
             readMockUp.readTeachingUnits();
-            // TODO : add method call to check all lines
             pMockUp = new ParserMockUp(readMockUp.getTeachingUnits());
             planning = new Planning(this.year, pMockUp.createTeachingUnits(), pCalendar.createCalendar());
             planning.getCalendar().setName("S9");
@@ -113,7 +107,6 @@ public class GeneratePlanning
             // DI5 S10
             readMockUp = new ReadMockUp(this.filePathMockUp, 6);
             readMockUp.readTeachingUnits();
-            // TODO : add method call to check all lines
             pMockUp = new ParserMockUp(readMockUp.getTeachingUnits());
             planning = new Planning(this.year, pMockUp.createTeachingUnits(), pCalendar.createCalendar());
             planning.getCalendar().setName("S10");

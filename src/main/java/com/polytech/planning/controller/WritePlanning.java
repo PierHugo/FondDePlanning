@@ -72,12 +72,12 @@ public class WritePlanning extends WriteFile
             this.writeEmptyCells(sheet, i);
             i++;
 
-            sheet.createFreezePane(9,17);
-            for (int iHiddenCol = 0; iHiddenCol == 5; iHiddenCol++)
+            sheet.createFreezePane(9,17); //fige des volets
+            for (int iCol = 0; iCol <= 5; iCol++)
             {
-                sheet.setColumnHidden(iHiddenCol, true); //pas fini
+                sheet.setColumnHidden(iCol, true); //cache les colonnes
             }
-            //TODO : lignex au dessus pour les volets figés/cacher les cellules
+            sheet.setColumnHidden(1, false); //réaffiche celle des cours
         }
         FileOutputStream output;
         output = new FileOutputStream(super.getFilePath());

@@ -476,7 +476,6 @@ public abstract class ReadFile
      */
     protected String normalizeText(String input)
     {
-        //TODO : MODIF here ajout du if
         if (input != null)
         {
             input = input.toLowerCase();

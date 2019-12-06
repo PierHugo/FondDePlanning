@@ -7,130 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="714b7c4a-8c6d-403e-aa32-e7ba706d5b06" name="Default Changelist" comment="Intégration IA terminée (juste regarde pas S10)">
-      <change afterPath="$PROJECT_DIR$/18-11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_085315.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_085713.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_090107.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_090328.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_090442.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_091441.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_092757.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_093404.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_094032.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_101114.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_101300.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_101443.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_170218.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_170407.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_170546.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_170626.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_171200.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_171216.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_171504.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_171553.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_172623.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_172844.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_173216.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_173408.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_173500.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_173640.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_174433.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_174940.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_175630.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_175851.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_175920.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_175956.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/log/LOG_Planning_20191113_180216.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/planning_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/planning_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_classpath.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_classpath.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Planning Année 3 DI 2019 - 2020.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/Planning Année 3 DI 2019 - 2020.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Planning Année 4 DI 2019 - 2020.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/Planning Année 4 DI 2019 - 2020.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Planning Année 5 DI 2019 - 2020.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/Planning Année 5 DI 2019 - 2020.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/planning_jar/MANIFEST.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/planning_jar/planning.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/planning_jar/planning.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/GeneratePlanning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/GeneratePlanning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/ParserCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/ParserCalendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/ParserMockUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/ParserMockUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/ReadCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/ReadCalendar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/ReadFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/ReadMockUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/ReadMockUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/StylesLib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/StylesLib.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/ToolBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/ToolBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/WriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/WriteFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/WritePlanning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/WritePlanning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/AutomateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/AutomateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/Calendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/FreeDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/FreeDay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/Holiday.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/Holiday.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/OriginalCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/OriginalCalendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/OriginalCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/OriginalCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/Planning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/Planning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/Semester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/Semester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/TeachingUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/TeachingUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/exception/AutomateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/model/exception/AutomateException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/view/MainView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/view/handler/MainViewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/view/handler/MainViewHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/polytech/planning/AutomateUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/polytech/planning/AutomateUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/polytech/planning/ParserCalendarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/polytech/planning/ParserCalendarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/polytech/planning/ParserMockUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/polytech/planning/ParserMockUpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/polytech/planning/ReadCalendarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/polytech/planning/ReadCalendarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/polytech/planning/ReadMockUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/polytech/planning/ReadMockUpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/polytech/planning/StyleLibTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/polytech/planning/StyleLibTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/polytech/planning/ToolBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/polytech/planning/ToolBoxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/polytech/planning/WriteFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/polytech/planning/WriteFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/polytech/planning/WritePlanningTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/polytech/planning/WritePlanningTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/GeneratePlanning.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/GeneratePlanning.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/ParserCalendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/ParserCalendar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/ParserMockUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/ParserMockUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/ReadCalendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/ReadCalendar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/ReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/ReadFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/ReadMockUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/ReadMockUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/StylesLib.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/StylesLib.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/ToolBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/ToolBox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WriteFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WriteFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning$nameYear.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning$nameYear.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/AutomateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/AutomateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/Calendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/Calendar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/FreeDay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/FreeDay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/Holiday.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/Holiday.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/OriginalCalendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/OriginalCalendar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/OriginalCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/OriginalCourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/Planning.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/Planning.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/Semester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/Semester.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/TeachingUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/TeachingUnit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/exception/AutomateException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/model/exception/AutomateException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/view/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/view/MainView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/view/handler/MainViewHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/view/handler/MainViewHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/AutomateUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/AutomateUtilTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/ParserCalendarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/ParserCalendarTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/ParserMockUpTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/ParserMockUpTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/ReadCalendarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/ReadCalendarTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/ReadMockUpTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/ReadMockUpTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/StyleLibTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/StyleLibTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/ToolBoxTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/ToolBoxTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/WriteFileTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/WriteFileTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/WritePlanningTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/polytech/planning/WritePlanningTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/logback.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,6 +185,7 @@
       <workItem from="1575449962883" duration="37000" />
       <workItem from="1575534651421" duration="2455000" />
       <workItem from="1575563704939" duration="5989000" />
+      <workItem from="1575615984632" duration="803000" />
     </task>
     <task id="LOCAL-00001" summary="Commit pour le gitignore">
       <created>1573223849105</created>
@@ -390,22 +278,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="488" y="359" width="943" height="362" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575572276707" />
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1575572955036">
+    <state x="332" y="47" key="CommitChangelistDialog2" timestamp="1575573039321">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575572955036" />
-    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1575572955036">
+    <state x="332" y="47" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1575573039321" />
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1575616814543">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575572955036" />
-    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1575572955035">
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575616814543" />
+    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1575616814543">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575572955035" />
-    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1575572955036">
+    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575616814543" />
+    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1575616814543">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575572955036" />
+    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575616814543" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1575616814543">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575616814543" />
     <state width="1877" height="341" key="GridCell.Tab.1.bottom" timestamp="1575569391855">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -426,6 +318,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1575567586675" />
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1575573051891">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1575573051891" />
     <state x="647" y="261" width="650" height="558" key="find.popup" timestamp="1575572422273">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
