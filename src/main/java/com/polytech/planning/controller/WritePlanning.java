@@ -1,10 +1,8 @@
 package com.polytech.planning.controller;
 
 import com.polytech.planning.model.*;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellType;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileOutputStream;
@@ -1061,19 +1059,6 @@ public class WritePlanning extends WriteFile
         cell2_1.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
         cell3_1.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
         cell4_1.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
-
-        /*
-         * "("+c1+"/Paramétrage!$C$5)+(IF(MOD(K10,Paramétrage!$C$5*Paramétrage!
-         * $E$2 ),
-         * (ROUNDDOWN(K10/(Paramétrage!$C$5*Paramétrage!$E$2),0)+1)*Paramétrage!
-         * $E$2,
-         * ROUNDDOWN(K10/(Paramétrage!$C$5*Paramétrage!$E$2)*Paramétrage!$E$2,0)
-         * )) +(IF(MOD(L10,Paramétrage!$C$5*Paramétrage!$F$2),
-         * (ROUNDDOWN(L10/(Paramétrage!$C$5*Paramétrage!$F$2),0)+1)*Paramétrage!
-         * $E$2,
-         * ROUNDDOWN(L10/(Paramétrage!$C$5*Paramétrage!$F$2)*Paramétrage!$F$2,0)
-         * ))"
-         */
     }
 
     /**
@@ -1119,6 +1104,7 @@ public class WritePlanning extends WriteFile
                 + ",Paramétrage!$C$5*Paramétrage!$F$2),(ROUNDDOWN(" + c3
                 + "/(Paramétrage!$C$5*Paramétrage!$F$2),0)+1)*Paramétrage!$E$2,ROUNDDOWN(" + c3
                 + "/(Paramétrage!$C$5*Paramétrage!$F$2)*Paramétrage!$F$2,0)))";
+        //TODO : réparer grosse fonction
 
         Cell cell1 = super.writeFormula(rowStrStart + "*Paramétrage!$C$5", startRow, col, sheet);
         Cell cell2 = super.writeFormula(avaiableSlot, startRow + 1, col, sheet);
@@ -1130,6 +1116,19 @@ public class WritePlanning extends WriteFile
         StylesLib.addBorderForMergedCell(sheet, startRow, startRow, col, col + 2);
         StylesLib.addBorderForMergedCell(sheet, startRow + 1, startRow + 1, col, col + 2);
         StylesLib.addBorderForMergedCell(sheet, startRow + 2, startRow + 2, col, col + 2);
+
+        SheetConditionalFormatting sheetCF = sheet.getSheetConditionalFormatting();
+
+        ConditionalFormattingRule rule = sheetCF.createConditionalFormattingRule(ComparisonOperator.GT, cell2.getAddress().toString());
+
+        PatternFormatting fill = rule.createPatternFormatting();
+        fill.setFillBackgroundColor(IndexedColors.LIGHT_ORANGE.index);
+        fill.setFillPattern(PatternFormatting.SOLID_FOREGROUND);
+
+        ConditionalFormattingRule[] cfRules = new ConditionalFormattingRule[]{rule};
+        CellRangeAddress[] regions = new CellRangeAddress[]{CellRangeAddress.valueOf(cell3.getAddress().toString())};
+
+        sheetCF.addConditionalFormatting(regions, cfRules);
 
     }
 

@@ -6,15 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="714b7c4a-8c6d-403e-aa32-e7ba706d5b06" name="Default Changelist" comment="Intégration des volets figés, colonnes cachées">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="714b7c4a-8c6d-403e-aa32-e7ba706d5b06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/18-11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/18-11.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Planning Année 4 DI 2019 - 2020.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/Planning Année 4 DI 2019 - 2020.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/WritePlanning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/WritePlanning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning$nameYear.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning$nameYear.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +178,9 @@
       <workItem from="1575534651421" duration="2455000" />
       <workItem from="1575563704939" duration="5989000" />
       <workItem from="1575615984632" duration="7805000" />
-      <workItem from="1575632466584" duration="4563000" />
+      <workItem from="1575632466584" duration="5988000" />
+      <workItem from="1575644677098" duration="1180000" />
+      <workItem from="1575723498081" duration="8914000" />
     </task>
     <task id="LOCAL-00001" summary="Commit pour le gitignore">
       <created>1573223849105</created>
@@ -234,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575617032611</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="J'ai remodelé un peu les en têtes du fond de planning pour que ça rende bien avec les colonnes masquées">
+      <created>1575637451017</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575637451017</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +265,8 @@
     <MESSAGE value="Commit de changement dans les TODO pour éclaircir quoi faire" />
     <MESSAGE value="Intégration IA terminée (juste regarde pas S10)" />
     <MESSAGE value="Intégration des volets figés, colonnes cachées" />
-    <option name="LAST_COMMIT_MESSAGE" value="Intégration des volets figés, colonnes cachées" />
+    <MESSAGE value="J'ai remodelé un peu les en têtes du fond de planning pour que ça rende bien avec les colonnes masquées" />
+    <option name="LAST_COMMIT_MESSAGE" value="J'ai remodelé un peu les en têtes du fond de planning pour que ça rende bien avec les colonnes masquées" />
   </component>
   <component name="WindowStateProjectService">
     <state x="674" y="174" width="587" height="732" key="#All" timestamp="1575572575930">
@@ -284,26 +289,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="488" y="359" width="943" height="362" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575572276707" />
-    <state x="332" y="47" key="CommitChangelistDialog2" timestamp="1575635367706">
+    <state x="332" y="47" key="CommitChangelistDialog2" timestamp="1575637449312">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="332" y="47" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1575635367706" />
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1575637292937">
+    <state x="332" y="47" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1575637449312" />
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1575732827483">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575637292937" />
-    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1575637292937">
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575732827483" />
+    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1575732827483">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575637292937" />
-    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1575637292937">
+    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575732827483" />
+    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1575732827483">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575637292937" />
-    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1575637292937">
+    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575732827483" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1575732827483">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575637292937" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575732827483" />
     <state width="1877" height="341" key="GridCell.Tab.1.bottom" timestamp="1575569391855">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -324,21 +329,21 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1575567586675" />
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1575617037416">
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1575637455514">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1575617037416" />
-    <state x="647" y="261" width="650" height="558" key="find.popup" timestamp="1575635634122">
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1575637455514" />
+    <state x="647" y="261" width="650" height="558" key="find.popup" timestamp="1575731785341">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="647" y="261" width="650" height="558" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575635634122" />
+    <state x="647" y="261" width="650" height="558" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575731785341" />
     <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1575620038051">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" width="672" height="677" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575620038051" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1575572065762">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1575727870207">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575572065762" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575727870207" />
   </component>
 </project>
