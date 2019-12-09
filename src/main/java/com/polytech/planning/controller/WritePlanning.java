@@ -1122,7 +1122,7 @@ public class WritePlanning extends WriteFile
         ConditionalFormattingRule rule = sheetCF.createConditionalFormattingRule(ComparisonOperator.GT, cell2.getAddress().toString());
 
         PatternFormatting fill = rule.createPatternFormatting();
-        fill.setFillBackgroundColor(IndexedColors.LIGHT_ORANGE.index);
+        fill.setFillBackgroundColor(IndexedColors.RED.index);
         fill.setFillPattern(PatternFormatting.SOLID_FOREGROUND);
 
         ConditionalFormattingRule[] cfRules = new ConditionalFormattingRule[]{rule};

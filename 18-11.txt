@@ -4,9 +4,5 @@ A faire :
 IA : créneaux utilisés ( grosse fonction param a revoir pour IA, semble inclure seulement une formation)
 Mundus : choix dans feuille calendrier
 
-Si facile :
-Colonne k : mise en forme conditionnelle heures restantes difference avec heures disponibles
-Ligne 7 : idem
-
 Étape suivante : ponts
 Étape suivante : S10 mais pas la priorité
