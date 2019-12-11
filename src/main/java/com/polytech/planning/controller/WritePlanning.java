@@ -86,7 +86,7 @@ public class WritePlanning extends WriteFile
      *
      * @param sheet
      */
-    public void freezeCells(Sheet sheet)
+    private void freezeCells(Sheet sheet)
     {
         sheet.createFreezePane(9, 17); //fige des volets
     }
@@ -96,7 +96,7 @@ public class WritePlanning extends WriteFile
      *
      * @param sheet
      */
-    public void hideCells(Sheet sheet)
+    private void hideCells(Sheet sheet)
     {
         for (int iCol = 0; iCol <= 5; iCol++)
         {
@@ -607,19 +607,19 @@ public class WritePlanning extends WriteFile
      */
     private void writeBooleanDI4(int row, Sheet sheet, String type)
     {
-        if (type.equalsIgnoreCase("ASR"))
-        {// middle ASR
-            Cell cell = super.writeNumberCell(row, 3, sheet, 0);
-            cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
-            cell = super.writeNumberCell(row, 4, sheet, 1);
-            cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
-            cell = super.writeNumberCell(row, 5, sheet, 0);
-            cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
-        } else if (type.equalsIgnoreCase("SI"))
+        if (type.equalsIgnoreCase("SI"))
         {// left SI
             Cell cell = super.writeNumberCell(row, 3, sheet, 1);
             cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
             cell = super.writeNumberCell(row, 4, sheet, 0);
+            cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
+            cell = super.writeNumberCell(row, 5, sheet, 0);
+            cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
+        } else if (type.equalsIgnoreCase("ASR"))
+        {// middle ASR
+            Cell cell = super.writeNumberCell(row, 3, sheet, 0);
+            cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
+            cell = super.writeNumberCell(row, 4, sheet, 1);
             cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
             cell = super.writeNumberCell(row, 5, sheet, 0);
             cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
@@ -702,13 +702,13 @@ public class WritePlanning extends WriteFile
                 case DI3:
                     // Mundus
                     StylesLib.setCellMerge(sheet, lastWritenRow - 2, lastWritenRow - 1, 6, 8);
-                    cell = super.writeStringCell(lastWritenRow - 2, 6, sheet, "Total Tr. Com. + MUNDUS");
+                    cell = super.writeStringCell(lastWritenRow - 2, 6, sheet, "Total Tr. Com. + DI3");
                     cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
                     StylesLib.addBorderForMergedCell(sheet, lastWritenRow - 2, lastWritenRow - 1, 6, 8);
 
                     // DI3
                     StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow + 1, 6, 8);
-                    cell = super.writeStringCell(lastWritenRow, 6, sheet, "Total Tr. Com. + DI3");
+                    cell = super.writeStringCell(lastWritenRow, 6, sheet, "Total Tr. Com. + Mundus");
                     cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
                     StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow + 1, 6, 8);
                     break;
@@ -716,13 +716,13 @@ public class WritePlanning extends WriteFile
                 case DI4:
                     // SI
                     StylesLib.setCellMerge(sheet, lastWritenRow - 2, lastWritenRow - 1, 6, 8);
-                    cell = super.writeStringCell(lastWritenRow - 2, 6, sheet, "Total Tr. Com. + ASR");
+                    cell = super.writeStringCell(lastWritenRow - 2, 6, sheet, "Total Tr. Com. + SI");
                     cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
                     StylesLib.addBorderForMergedCell(sheet, lastWritenRow - 2, lastWritenRow - 1, 6, 8);
 
                     // ASR
                     StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow + 1, 6, 8);
-                    cell = super.writeStringCell(lastWritenRow, 6, sheet, "Total Tr. Com. + SI");
+                    cell = super.writeStringCell(lastWritenRow, 6, sheet, "Total Tr. Com. + ASR");
                     cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
                     StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow + 1, 6, 8);
 
@@ -737,13 +737,13 @@ public class WritePlanning extends WriteFile
                 case DI5:
                     // SI
                     StylesLib.setCellMerge(sheet, lastWritenRow - 2, lastWritenRow - 1, 6, 8);
-                    cell = super.writeStringCell(lastWritenRow - 2, 6, sheet, "Total Tr. Com. + ASR");
+                    cell = super.writeStringCell(lastWritenRow - 2, 6, sheet, "Total Tr. Com. + SI");
                     cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
                     StylesLib.addBorderForMergedCell(sheet, lastWritenRow - 2, lastWritenRow - 1, 6, 8);
 
                     // ASR
                     StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow + 1, 6, 8);
-                    cell = super.writeStringCell(lastWritenRow, 6, sheet, "Total Tr. Com. + SI");
+                    cell = super.writeStringCell(lastWritenRow, 6, sheet, "Total Tr. Com. + ASR ");
                     cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
                     StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow + 1, 6, 8);
 
@@ -1011,11 +1011,11 @@ public class WritePlanning extends WriteFile
         {
             case 0:
                 startRow = this.lastWritenRow - 4;
-                line = 5;
+                line = 4;
                 break;
             case 1:
                 startRow = this.lastWritenRow - 2;
-                line = 4;
+                line = 5;
                 break;
             case 2:
                 startRow = this.lastWritenRow;
@@ -1093,22 +1093,43 @@ public class WritePlanning extends WriteFile
 
         rowStrStart = ToolBox.excelColIndexToStr(col + 1) + (startRow + 2);
         // line 3
-        String c1, c2, c3;
-        c1 = ToolBox.excelColIndexToStr(col + 1) + (startRow + 9);
-        c2 = ToolBox.excelColIndexToStr(col + 2) + (startRow + 9);
-        c3 = ToolBox.excelColIndexToStr(col + 3) + (startRow + 9);
-        String forlume = "(" + c1 + "/Paramétrage!$C$5)+(IF(MOD(" + c2
-                + ",Paramétrage!$C$5*Paramétrage!$E$2),(ROUNDDOWN(" + c2
-                + "/(Paramétrage!$C$5*Paramétrage!$E$2),0)+1)*Paramétrage!$E$2,ROUNDDOWN(" + c2
-                + "/(Paramétrage!$C$5*Paramétrage!$E$2)*Paramétrage!$E$2,0))) +(IF(MOD(" + c3
-                + ",Paramétrage!$C$5*Paramétrage!$F$2),(ROUNDDOWN(" + c3
-                + "/(Paramétrage!$C$5*Paramétrage!$F$2),0)+1)*Paramétrage!$E$2,ROUNDDOWN(" + c3
+        String cm1, cm2, cm3, td1, td2, td3, tp1, tp2, tp3;
+        cm1 = ToolBox.excelColIndexToStr(col + 1) + (startRow + 5);
+        cm2 = ToolBox.excelColIndexToStr(col + 1) + (startRow + 7);
+        cm3 = ToolBox.excelColIndexToStr(col + 1) + (startRow + 9);
+        td1 = ToolBox.excelColIndexToStr(col + 2) + (startRow + 5);
+        td2 = ToolBox.excelColIndexToStr(col + 2) + (startRow + 7);
+        td3 = ToolBox.excelColIndexToStr(col + 2) + (startRow + 9);
+        tp1 = ToolBox.excelColIndexToStr(col + 3) + (startRow + 5);
+        tp2 = ToolBox.excelColIndexToStr(col + 3) + (startRow + 7);
+        tp3 = ToolBox.excelColIndexToStr(col + 3) + (startRow + 9);
+
+        String dureeCreneau, nbGroupeTD, nbGroupeTP;
+        dureeCreneau = "Paramétrage!$C$5";
+        nbGroupeTD = "Paramétrage!$E$2";
+        nbGroupeTP = "Paramétrage!$F$2";
+
+
+        String forlume = "(" + cm3 + "/Paramétrage!$C$5)+(IF(MOD(" + td3
+                + ",Paramétrage!$C$5*Paramétrage!$E$2),(ROUNDDOWN(" + td3
+                + "/(Paramétrage!$C$5*Paramétrage!$E$2),0)+1)*Paramétrage!$E$2,ROUNDDOWN(" + td3
+                + "/(Paramétrage!$C$5*Paramétrage!$E$2)*Paramétrage!$E$2,0))) +(IF(MOD(" + tp3
+                + ",Paramétrage!$C$5*Paramétrage!$F$2),(ROUNDDOWN(" + tp3
+                + "/(Paramétrage!$C$5*Paramétrage!$F$2),0)+1)*Paramétrage!$F$2,ROUNDDOWN(" + tp3
                 + "/(Paramétrage!$C$5*Paramétrage!$F$2)*Paramétrage!$F$2,0)))";
+
+        String forlume1 = "(" + cm1 + "/" + dureeCreneau + ")+(IF(MOD(" + td1
+                + "," + dureeCreneau + "*" + nbGroupeTD + "),(ROUNDDOWN(" + td1
+                + "/(" + dureeCreneau + "*" + nbGroupeTD + "),0)+1)*" + nbGroupeTD + ",ROUNDDOWN(" + td1
+                + "/(" + dureeCreneau + "*" + nbGroupeTD + ")*" + nbGroupeTD + ",0))) +(IF(MOD(" + tp1
+                + "," + dureeCreneau + "*" + nbGroupeTP + "),(ROUNDDOWN(" + tp1
+                + "/(" + dureeCreneau + "*" + nbGroupeTP + "),0)+1)*" + nbGroupeTP + ",ROUNDDOWN(" + tp1
+                + "/(" + dureeCreneau + "*" + nbGroupeTP + ")*" + nbGroupeTP + ",0)))";
         //TODO : réparer grosse fonction
 
         Cell cell1 = super.writeFormula(rowStrStart + "*Paramétrage!$C$5", startRow, col, sheet);
         Cell cell2 = super.writeFormula(avaiableSlot, startRow + 1, col, sheet);
-        Cell cell3 = super.writeFormula(forlume, startRow + 2, col, sheet);
+        Cell cell3 = super.writeFormula(forlume1, startRow + 2, col, sheet);
 
         cell1.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
         cell2.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));

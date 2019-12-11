@@ -6,17 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="714b7c4a-8c6d-403e-aa32-e7ba706d5b06" name="Default Changelist" comment="Ajout de la mise en forme conditionnelle sur les cellulues &quot;créneaux utilisés&quot; : se colorent en orange si elles sont supérieures aux cellules &quot;créneaux disponibles&quot;">
+    <list default="true" id="714b7c4a-8c6d-403e-aa32-e7ba706d5b06" name="Default Changelist" comment="J'ai mis en rouge c'est mieux que orange hihi">
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/planning_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/planning_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/18-11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/18-11.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Planning Année 3 DI 2019 - 2020.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/Planning Année 3 DI 2019 - 2020.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Planning Année 4 DI 2019 - 2020.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/Planning Année 4 DI 2019 - 2020.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Planning Année 5 DI 2019 - 2020.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/Planning Année 5 DI 2019 - 2020.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/planning_jar/planning.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/planning_jar/planning.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/WritePlanning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/WritePlanning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning$nameYear.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning$nameYear.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/planning/controller/WritePlanning.class" afterDir="false" />
     </list>
@@ -24,6 +22,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="planning" />
@@ -39,7 +51,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/WritePlanning.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/polytech/planning/controller/WritePlanning.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -66,10 +78,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15722656" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
   </component>
   <component name="RunManager" selected="Application.All">
     <configuration name="All" type="Application" factoryName="Application">
@@ -201,7 +213,8 @@
       <workItem from="1575836044485" duration="40000" />
       <workItem from="1575836106201" duration="753000" />
       <workItem from="1575897997618" duration="1176000" />
-      <workItem from="1575899202444" duration="3477000" />
+      <workItem from="1575899202444" duration="3809000" />
+      <workItem from="1575906916606" duration="10412000" />
     </task>
     <task id="LOCAL-00001" summary="Commit pour le gitignore">
       <created>1573223849105</created>
@@ -266,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575732925449</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="J'ai mis en rouge c'est mieux que orange hihi">
+      <created>1575902864459</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575902864459</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +316,8 @@
     <MESSAGE value="Intégration des volets figés, colonnes cachées" />
     <MESSAGE value="J'ai remodelé un peu les en têtes du fond de planning pour que ça rende bien avec les colonnes masquées" />
     <MESSAGE value="Ajout de la mise en forme conditionnelle sur les cellulues &quot;créneaux utilisés&quot; : se colorent en orange si elles sont supérieures aux cellules &quot;créneaux disponibles&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la mise en forme conditionnelle sur les cellulues &quot;créneaux utilisés&quot; : se colorent en orange si elles sont supérieures aux cellules &quot;créneaux disponibles&quot;" />
+    <MESSAGE value="J'ai mis en rouge c'est mieux que orange hihi" />
+    <option name="LAST_COMMIT_MESSAGE" value="J'ai mis en rouge c'est mieux que orange hihi" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -318,14 +339,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="674" y="174" width="587" height="732" key="#DI5/0.0.1920.1080@0.0.1920.1080" timestamp="1575572554113" />
+    <state x="552" y="198" key="#Inspections" timestamp="1575921463640">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="198" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1575921463640" />
     <state x="552" y="198" key="#Notifications" timestamp="1575733253564">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="198" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1575733253564" />
-    <state x="426" y="73" width="1137" height="841" key="#Project_Structure" timestamp="1575899243154">
+    <state x="426" y="73" width="1137" height="841" key="#Project_Structure" timestamp="1575902962559">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="426" y="73" width="1137" height="841" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1575899243154" />
+    <state x="426" y="73" width="1137" height="841" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1575902962559" />
     <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575901459559">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -342,62 +367,70 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="488" y="359" width="943" height="362" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575572276707" />
-    <state x="332" y="47" key="CommitChangelistDialog2" timestamp="1575836531014">
+    <state x="774" y="366" key="#com.intellij.tools.ToolEditorDialog" timestamp="1575922070384">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="332" y="47" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1575836531014" />
+    <state x="774" y="366" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575922070384" />
+    <state x="332" y="47" key="CommitChangelistDialog2" timestamp="1575908577074">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="332" y="47" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1575908577074" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1575898961567">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1575898961567" />
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1575902744709">
+    <state width="1877" height="341" key="GridCell.Tab.0.bottom" timestamp="1575922302409">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575902744709" />
-    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1575902744709">
+    <state width="1877" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575922302409" />
+    <state width="1877" height="341" key="GridCell.Tab.0.center" timestamp="1575922302409">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575902744709" />
-    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1575902744709">
+    <state width="1877" height="341" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575922302409" />
+    <state width="1877" height="341" key="GridCell.Tab.0.left" timestamp="1575922302409">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575902744709" />
-    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1575902744709">
+    <state width="1877" height="341" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575922302409" />
+    <state width="1877" height="341" key="GridCell.Tab.0.right" timestamp="1575922302409">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575902744709" />
-    <state width="1877" height="341" key="GridCell.Tab.1.bottom" timestamp="1575569391855">
+    <state width="1877" height="341" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575922302409" />
+    <state width="1877" height="341" key="GridCell.Tab.1.bottom" timestamp="1575922302409">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="341" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575569391855" />
-    <state width="1877" height="341" key="GridCell.Tab.1.center" timestamp="1575569391855">
+    <state width="1877" height="341" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575922302409" />
+    <state width="1877" height="341" key="GridCell.Tab.1.center" timestamp="1575922302409">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="341" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575569391855" />
-    <state width="1877" height="341" key="GridCell.Tab.1.left" timestamp="1575569391855">
+    <state width="1877" height="341" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575922302409" />
+    <state width="1877" height="341" key="GridCell.Tab.1.left" timestamp="1575922302409">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="341" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575569391855" />
-    <state width="1877" height="341" key="GridCell.Tab.1.right" timestamp="1575569391855">
+    <state width="1877" height="341" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575922302409" />
+    <state width="1877" height="341" key="GridCell.Tab.1.right" timestamp="1575922302409">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="341" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575569391855" />
-    <state x="461" y="182" key="SettingsEditor" timestamp="1575901316491">
+    <state width="1877" height="341" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575922302409" />
+    <state x="412" y="180" width="1182" height="716" key="SettingsEditor" timestamp="1575922127612">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="461" y="182" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1575901316491" />
+    <state x="412" y="180" width="1182" height="716" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1575922127612" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1575567586675">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1575567586675" />
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1575732930622">
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1575902868481">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1575732930622" />
-    <state x="647" y="261" width="650" height="558" key="find.popup" timestamp="1575899902644">
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1575902868481" />
+    <state x="647" y="261" width="650" height="558" key="find.popup" timestamp="1575920579713">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="647" y="261" width="650" height="558" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575899902644" />
+    <state x="647" y="261" width="650" height="558" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575920579713" />
+    <state x="342" y="237" key="new project wizard" timestamp="1575921080806">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="342" y="237" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1575921080806" />
     <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1575620038051">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
