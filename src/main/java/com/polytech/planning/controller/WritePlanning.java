@@ -360,7 +360,7 @@ public class WritePlanning extends WriteFile
         }
         for (Teacher teacher : course.getListTeachers())
         {
-
+        //TODO : ce serait pas ici pour faire un DI3m ?
             if (teacher.getTDMundus() != 0)
             {
                 // Row row = sheet.createRow(teacherEndRow);
