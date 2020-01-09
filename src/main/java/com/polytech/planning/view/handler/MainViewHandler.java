@@ -55,27 +55,29 @@ public class MainViewHandler
             maquettePath = command[2];
             calendarPath = command[3];
             schoolYearTable = schoolYear.split("/");
-            // TODO : inclure di3m
             switch (year)
             {
-                case ("-di3m"):
-                    file_name = "Planning Année " + "3 DI Mundus " + schoolYearTable[0] + " - " + schoolYearTable[1] + ".xlsx";
-                    this.excuteGenerateCommand(schoolYear, "DI3M", maquettePath, calendarPath, file_name);
-                    break;
                 case ("-di3"):
                     file_name = "Planning Année " + "3 DI " + schoolYearTable[0] + " - " + schoolYearTable[1] + ".xlsx";
                     this.excuteGenerateCommand(schoolYear, "DI3", maquettePath, calendarPath, file_name);
                     break;
+                case ("-di3m"):
+                    file_name = "Planning Année " + "3 DI Mundus " + schoolYearTable[0] + " - " + schoolYearTable[1] + ".xlsx";
+                    this.excuteGenerateCommand(schoolYear, "DI3M", maquettePath, calendarPath, file_name);
+                    break;
                 case ("-di4"):
                     file_name = "Planning Année " + "4 DI " + schoolYearTable[0] + " - " + schoolYearTable[1] + ".xlsx";
                     this.excuteGenerateCommand(schoolYear, "DI4", maquettePath, calendarPath, file_name);
+                    break;
+                case ("-di5"):
+                    file_name = "Planning Année " + "5 DI " + schoolYearTable[0] + " - " + schoolYearTable[1] + ".xlsx";
+                    this.excuteGenerateCommand(schoolYear, "DI5", maquettePath, calendarPath, file_name);
                     break;
                 case ("-all"):
                     file_name = "Planning Année " + "3 DI " + schoolYearTable[0] + " - " + schoolYearTable[1] + ".xlsx";
                     this.excuteGenerateCommand(schoolYear, "DI3", maquettePath, calendarPath, file_name);
                     file_name = "Planning Année " + "4 DI " + schoolYearTable[0] + " - " + schoolYearTable[1] + ".xlsx";
                     this.excuteGenerateCommand(schoolYear, "DI4", maquettePath, calendarPath, file_name);
-                case ("-di5"):
                     file_name = "Planning Année " + "5 DI " + schoolYearTable[0] + " - " + schoolYearTable[1] + ".xlsx";
                     this.excuteGenerateCommand(schoolYear, "DI5", maquettePath, calendarPath, file_name);
                     break;
@@ -103,7 +105,6 @@ public class MainViewHandler
 
         gp = new GeneratePlanning(school_year, maquette_path, calendar_path);
         wp = new WritePlanning(gp.getPlanningByYear(annee), annee, file_name);
-        //TODO : Mundus à ajouter
 
         wp.createFile();
         System.out.println("Creating <" + file_name + "> finished");

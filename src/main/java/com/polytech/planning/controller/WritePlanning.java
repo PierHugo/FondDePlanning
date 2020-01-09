@@ -145,7 +145,6 @@ public class WritePlanning extends WriteFile
                 numGroupTD = 3;
                 numGroupTP = 3;
                 break;
-            //TODO : modif 9 créneaux pour Mundus
             case DI3M:
                 yearNum = 3;
                 numDays = 4.5f;
@@ -330,8 +329,8 @@ public class WritePlanning extends WriteFile
             this.writeCourse(courseStartRow, sheet, course.getName());
             courseStartRow = courseEndRow + 1;
 
-            // test mundus
-            if (course.isMundus())
+            // Affiche "cours_mundus" pour les DI3M si le cours est un cours Mundus
+            if (course.isMundus() && this.year.equalsIgnoreCase("DI3M"))
             {
                 nowRow = this.writeMundusTeachers(courseStartRow, sheet, course);
                 courseEndRow = nowRow - 1;
@@ -368,7 +367,6 @@ public class WritePlanning extends WriteFile
         }
         for (Teacher teacher : course.getListTeachers())
         {
-        //TODO : ce serait pas ici pour faire un DI3m ?
             if (teacher.getTDMundus() != 0)
             {
                 // Row row = sheet.createRow(teacherEndRow);
@@ -685,21 +683,21 @@ public class WritePlanning extends WriteFile
             StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow, 6, 8);
             cell = super.writeStringCell(lastWritenRow, 6, sheet, "Disponibilité / étudiant (h)");
             cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
-            StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow , 6, 8);
+            StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow, 6, 8);
 
             lastWritenRow++;
 
             StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow, 6, 8);
             cell = super.writeStringCell(lastWritenRow, 6, sheet, "Créneaux disponibles");
             cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
-            StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow , 6, 8);
+            StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow, 6, 8);
 
             lastWritenRow++;
 
             StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow, 6, 8);
             cell = super.writeStringCell(lastWritenRow, 6, sheet, "Créneaux utilisés");
             cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
-            StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow , 6, 8);
+            StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow, 6, 8);
 
             lastWritenRow += 4;
 
@@ -788,7 +786,7 @@ public class WritePlanning extends WriteFile
         StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow, 6, 8);
         cell = super.writeStringCell(lastWritenRow, 6, sheet, "N° semaine");
         cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
-        StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow , 6, 8);
+        StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow, 6, 8);
 
 
         lastWritenRow++;
@@ -796,7 +794,7 @@ public class WritePlanning extends WriteFile
         StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow, 6, 8);
         cell = super.writeStringCell(lastWritenRow, 6, sheet, "Date semaine");
         cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
-        StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow , 6, 8);
+        StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow, 6, 8);
 
         lastWritenRow += 2;
 
@@ -966,14 +964,14 @@ public class WritePlanning extends WriteFile
                     }
                     if (year.equals("DI3M"))
                     {
-                        // write summary MUNDUS/SI
+                        // write summary MUNDUS
                         this.writeSummary(i, sheets.get(calName), numSemester, 1);
                     }
                     if (year.equals("DI4") || year.equals("DI5"))
                     {
-                        // write summary MUNDUS/SI
+                        // write summary SI
                         this.writeSummary(i, sheets.get(calName), numSemester, 0);
-                        // write summary DI3/ASR
+                        // write summary ASR
                         this.writeSummary(i, sheets.get(calName), numSemester, 1);
                         // write summary IA
                         this.writeSummary(i, sheets.get(calName), numSemester, 2);
@@ -1130,6 +1128,7 @@ public class WritePlanning extends WriteFile
         StylesLib.setCellMerge(sheet, startRow + 1, startRow + 1, col, col + 2);
         StylesLib.setCellMerge(sheet, startRow + 2, startRow + 2, col, col + 2);
 
+
         rowStrStart = ToolBox.excelColIndexToStr(col + 1) + (startRow + 2);
         // line 3
         String cm1, cm2, cm3, td1, td2, td3, tp1, tp2, tp3;
@@ -1157,6 +1156,7 @@ public class WritePlanning extends WriteFile
                 + "/(Paramétrage!$C$5*Paramétrage!$F$2),0)+1)*Paramétrage!$F$2,ROUNDDOWN(" + tp3
                 + "/(Paramétrage!$C$5*Paramétrage!$F$2)*Paramétrage!$F$2,0)))";
 
+        //TODO : Repair this because it's only taking the 1st part (row 9)
         String forlume1 = "(" + cm1 + "/" + dureeCreneau + ")+(IF(MOD(" + td1
                 + "," + dureeCreneau + "*" + nbGroupeTD + "),(ROUNDDOWN(" + td1
                 + "/(" + dureeCreneau + "*" + nbGroupeTD + "),0)+1)*" + nbGroupeTD + ",ROUNDDOWN(" + td1
@@ -1164,7 +1164,6 @@ public class WritePlanning extends WriteFile
                 + "," + dureeCreneau + "*" + nbGroupeTP + "),(ROUNDDOWN(" + tp1
                 + "/(" + dureeCreneau + "*" + nbGroupeTP + "),0)+1)*" + nbGroupeTP + ",ROUNDDOWN(" + tp1
                 + "/(" + dureeCreneau + "*" + nbGroupeTP + ")*" + nbGroupeTP + ",0)))";
-        //TODO : réparer grosse fonction
 
         Cell cell1 = super.writeFormula(rowStrStart + "*Paramétrage!$C$5", startRow, col, sheet);
         Cell cell2 = super.writeFormula(avaiableSlot, startRow + 1, col, sheet);
