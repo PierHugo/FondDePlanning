@@ -145,6 +145,14 @@ public class WritePlanning extends WriteFile
                 numGroupTD = 3;
                 numGroupTP = 3;
                 break;
+            //TODO : modif 9 créneaux pour Mundus
+            case DI3M:
+                yearNum = 3;
+                numDays = 4.5f;
+                numSlots = 2f;
+                numGroupTD = 1;
+                numGroupTP = 1;
+                break;
             case DI4:
                 yearNum = 4;
                 numDays = 4.5f;
@@ -370,6 +378,8 @@ public class WritePlanning extends WriteFile
                 this.writeTeacher(teacherEndRow, sheet, teacher.getName());
                 this.writeHoursPut(teacherEndRow, sheet, teacher.getTDMundus());
                 if (this.year.equalsIgnoreCase("DI3"))
+                    this.writeBooleanDI3(teacherEndRow, sheet, 2);
+                if (this.year.equalsIgnoreCase("DI3M"))
                     this.writeBooleanDI3(teacherEndRow, sheet, 0);
                 teacherEndRow++;
                 lastRow = teacherEndRow;
@@ -385,6 +395,8 @@ public class WritePlanning extends WriteFile
                 this.writeTeacher(teacherEndRow, sheet, teacher.getName());
                 this.writeHoursPut(teacherEndRow, sheet, teacher.getTPMundus());
                 if (this.year.equalsIgnoreCase("DI3"))
+                    this.writeBooleanDI3(teacherEndRow, sheet, 2);
+                if (this.year.equalsIgnoreCase("DI3M"))
                     this.writeBooleanDI3(teacherEndRow, sheet, 0);
                 teacherEndRow++;
                 lastRow = teacherEndRow;
@@ -442,6 +454,14 @@ public class WritePlanning extends WriteFile
                         this.writeBooleanDI3(teacherEndRow, sheet, 1);
                     }
                 }
+                if (this.year.equalsIgnoreCase("DI3M"))
+                {
+                    if (course.isMundus())
+                    {
+                        this.writeBooleanDI3(teacherEndRow, sheet, 0);
+                    }
+                }
+
                 if (this.year.equalsIgnoreCase("DI4")
                         || this.year.equalsIgnoreCase("DI5") && !this.numSemester.equals("S10"))
                     this.writeBooleanDI4(teacherEndRow, sheet, course.getType());
@@ -578,15 +598,11 @@ public class WritePlanning extends WriteFile
     {
         if (type == 0)
         {
-            Cell cell = super.writeNumberCell(row, 3, sheet, 0);
-            cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
-            cell = super.writeNumberCell(row, 4, sheet, 1);
+            Cell cell = super.writeNumberCell(row, 4, sheet, 1);
             cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
         } else if (type == 1)
         {
             Cell cell = super.writeNumberCell(row, 3, sheet, 1);
-            cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
-            cell = super.writeNumberCell(row, 4, sheet, 0);
             cell.setCellStyle(StylesLib.baseStyle((XSSFWorkbook) workbook));
         } else
         {
@@ -700,13 +716,20 @@ public class WritePlanning extends WriteFile
             {
 
                 case DI3:
-                    // Mundus
+                    // DI3
                     StylesLib.setCellMerge(sheet, lastWritenRow - 2, lastWritenRow - 1, 6, 8);
                     cell = super.writeStringCell(lastWritenRow - 2, 6, sheet, "Total Tr. Com. + DI3");
                     cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
                     StylesLib.addBorderForMergedCell(sheet, lastWritenRow - 2, lastWritenRow - 1, 6, 8);
+                    // Mundus
+                    StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow + 1, 6, 8);
+                    cell = super.writeStringCell(lastWritenRow, 6, sheet, "Total Tr. Com. + Mundus");
+                    cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
+                    StylesLib.addBorderForMergedCell(sheet, lastWritenRow, lastWritenRow + 1, 6, 8);
+                    break;
 
-                    // DI3
+                case DI3M:
+                    // Mundus
                     StylesLib.setCellMerge(sheet, lastWritenRow, lastWritenRow + 1, 6, 8);
                     cell = super.writeStringCell(lastWritenRow, 6, sheet, "Total Tr. Com. + Mundus");
                     cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
@@ -793,7 +816,11 @@ public class WritePlanning extends WriteFile
             case DI3:
                 cell = super.writeStringCell(lastWritenRow, 3, sheet, "DI3");
                 cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
+                cell = super.writeStringCell(lastWritenRow, 4, sheet, "MUNDUS");
+                cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
+                break;
 
+            case DI3M:
                 cell = super.writeStringCell(lastWritenRow, 4, sheet, "MUNDUS");
                 cell.setCellStyle(StylesLib.baseBorderStyle((XSSFWorkbook) workbook));
                 break;
@@ -930,13 +957,25 @@ public class WritePlanning extends WriteFile
                 {
                     this.writeAvailable(calendar, i, sheets.get(calName), numSemester, key);
                     this.writeSummaryTitles(i, sheets.get(calName), numSemester);
-                    // write summary MUNDUS/SI
-                    this.writeSummary(i, sheets.get(calName), numSemester, 0);
-                    // write summary DI3/ASR
-                    this.writeSummary(i, sheets.get(calName), numSemester, 1);
-                    // write summary IA
+                    if (year.equals("DI3"))
+                    {
+                        // write summary MUNDUS/SI
+                        this.writeSummary(i, sheets.get(calName), numSemester, 0);
+                        // write summary DI3/ASR
+                        this.writeSummary(i, sheets.get(calName), numSemester, 1);
+                    }
+                    if (year.equals("DI3M"))
+                    {
+                        // write summary MUNDUS/SI
+                        this.writeSummary(i, sheets.get(calName), numSemester, 1);
+                    }
                     if (year.equals("DI4") || year.equals("DI5"))
                     {
+                        // write summary MUNDUS/SI
+                        this.writeSummary(i, sheets.get(calName), numSemester, 0);
+                        // write summary DI3/ASR
+                        this.writeSummary(i, sheets.get(calName), numSemester, 1);
+                        // write summary IA
                         this.writeSummary(i, sheets.get(calName), numSemester, 2);
                     }
                 }
@@ -1215,6 +1254,6 @@ public class WritePlanning extends WriteFile
 
     private enum nameYear
     {
-        DI3, DI4, DI5;
+        DI3, DI3M, DI4, DI5;
     }
 }

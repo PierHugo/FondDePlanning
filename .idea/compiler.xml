@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="FondDePlanning_CARPENTIER_PIEDLOUP" />
         <module name="FondDePlanning" />
-        <module name="Projet" />
       </profile>
     </annotationProcessing>
   </component>

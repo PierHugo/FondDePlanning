@@ -55,9 +55,13 @@ public class MainViewHandler
             maquettePath = command[2];
             calendarPath = command[3];
             schoolYearTable = schoolYear.split("/");
-
+            // TODO : inclure di3m
             switch (year)
             {
+                case ("-di3m"):
+                    file_name = "Planning Année " + "3 DI Mundus " + schoolYearTable[0] + " - " + schoolYearTable[1] + ".xlsx";
+                    this.excuteGenerateCommand(schoolYear, "DI3M", maquettePath, calendarPath, file_name);
+                    break;
                 case ("-di3"):
                     file_name = "Planning Année " + "3 DI " + schoolYearTable[0] + " - " + schoolYearTable[1] + ".xlsx";
                     this.excuteGenerateCommand(schoolYear, "DI3", maquettePath, calendarPath, file_name);
@@ -99,6 +103,8 @@ public class MainViewHandler
 
         gp = new GeneratePlanning(school_year, maquette_path, calendar_path);
         wp = new WritePlanning(gp.getPlanningByYear(annee), annee, file_name);
+        //TODO : Mundus à ajouter
+
         wp.createFile();
         System.out.println("Creating <" + file_name + "> finished");
     }
@@ -111,7 +117,7 @@ public class MainViewHandler
         System.out.println("------------------------------------------------------------");
         System.out.println("The format of command is:");
         System.out.println(
-                "java -jar planning-generator.jar <school_year> <-di3|-di4|-di5|-all> <path_of_maquette> <path_of_calendar>");
+                "java -jar planning-generator.jar <school_year> <-di3|-di3m|-di4|-di5|-all> <path_of_maquette> <path_of_calendar>");
         System.out.println("------------------------------------------------------------");
         System.out.println("Explication:");
         System.out.println("\t <school_year> : format-> yearStart/yearEnd");
@@ -120,6 +126,7 @@ public class MainViewHandler
         System.out.println("\t <-di3|-di4|-di5|-all> :");
         System.out.println("\t\t Obligatory, the year of the planning you want to generate.");
         System.out.println("\t\t\t -di3: for DI3");
+        System.out.println("\t\t\t -di3m: for DI3 Mundus");
         System.out.println("\t\t\t -di4: for DI4");
         System.out.println("\t\t\t -di5: for DI5");
         System.out.println("\t\t\t -all: for all three years");

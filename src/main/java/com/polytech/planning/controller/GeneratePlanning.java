@@ -45,6 +45,7 @@ public class GeneratePlanning
         ParserCalendar pCalendar;
         Planning planning;
         List<Planning> planningDI3 = new ArrayList<Planning>();
+        List<Planning> planningDI3M = new ArrayList<Planning>();
         List<Planning> planningDI4 = new ArrayList<Planning>();
         List<Planning> planningDI5 = new ArrayList<Planning>();
 
@@ -75,6 +76,28 @@ public class GeneratePlanning
 
             planningDI3.add(planning);
             plannings.put("DI3", planningDI3);
+        } else if (year.equals("DI3M"))
+        {
+            // DI3M S5
+            readMockUp = new ReadMockUp(this.filePathMockUp, 1);
+            readMockUp.readTeachingUnits();
+
+
+            System.out.println("Parsing data...");
+            pMockUp = new ParserMockUp(readMockUp.getTeachingUnits());
+            planning = new Planning(this.year, pMockUp.createTeachingUnits(), pCalendar.createCalendar());
+            planning.getCalendar().setName("S5");
+            planningDI3M.add(planning);
+
+            // DI3M S6
+            readMockUp = new ReadMockUp(this.filePathMockUp, 2);
+            readMockUp.readTeachingUnits();
+            pMockUp = new ParserMockUp(readMockUp.getTeachingUnits());
+            planning = new Planning(this.year, pMockUp.createTeachingUnits(), pCalendar.createCalendar());
+            planning.getCalendar().setName("S6");
+
+            planningDI3M.add(planning);
+            plannings.put("DI3M", planningDI3M);
         } else if (year.equals("DI4"))
         {
             // DI4 S7
