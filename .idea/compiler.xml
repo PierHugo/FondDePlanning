@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="FondDePlanning_CARPENTIER_PIEDLOUP" />
         <module name="FondDePlanning" />
+        <module name="FondDePlanning_CARPENTIER_PIEDLOUP" />
       </profile>
     </annotationProcessing>
   </component>

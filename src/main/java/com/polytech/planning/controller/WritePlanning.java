@@ -329,8 +329,8 @@ public class WritePlanning extends WriteFile
             this.writeCourse(courseStartRow, sheet, course.getName());
             courseStartRow = courseEndRow + 1;
 
-            // Affiche "cours_mundus" pour les DI3M si le cours est un cours Mundus
-            if (course.isMundus() && this.year.equalsIgnoreCase("DI3M"))
+            // Affiche "cours_mundus" si le cours est un cours Mundus
+            if (course.isMundus())
             {
                 nowRow = this.writeMundusTeachers(courseStartRow, sheet, course);
                 courseEndRow = nowRow - 1;
